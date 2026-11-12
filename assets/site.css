@@ -372,6 +372,17 @@ footer{margin-top:44px}
 .nav .logo img,.flogo img{display:block;border-radius:8px;border:1px solid var(--rule-2)}
 .flogo{display:flex;align-items:center;gap:14px}
 .disclink{display:block;border-radius:50%}
+/* no tap flash on touch; keyboard focus ring stays */
+*{-webkit-tap-highlight-color:transparent}
+.disc,.disc *,.disclink{-webkit-touch-callout:none;user-select:none;-webkit-user-select:none}
+.hit:focus:not(:focus-visible),.disclink:focus:not(:focus-visible){outline:0}
+/* keep wide screens from stretching content edge to edge */
+.film>header,.band>*,footer .in{max-width:1440px;margin-inline:auto}
+@media (min-width:861px){
+  .fcred,.rows{max-width:820px;margin-inline:auto}
+  .rows .r{font-size:14px}
+  .frame{max-width:1100px;margin-inline:auto}
+}
 .crate .disc{cursor:pointer}
 .band>.syn:only-child{padding-block:56px;max-width:60ch;font-size:17px}
 @media (max-width:520px){.nav .logo{display:block}.nav .logo img{width:30px;height:30px;border-radius:6px}.nav a.tab[data-k="contact"]{display:none}}
