@@ -171,14 +171,15 @@ function mountHome(k){
   const onWheel=e=>{if(Math.abs(e.deltaX)<=Math.abs(e.deltaY))return;e.preventDefault();
     target=Math.max(-(list.length-1)*gap,Math.min(0,target-e.deltaX));clearTimeout(wheelT);wheelT=setTimeout(()=>go(Math.round(-target/gap)),120)};
   el.addEventListener("wheel",onWheel,{passive:false});
-  el.addEventListener("pointerdown",e=>{dragging=true;moved=0;axis=null;sx=e.clientX;sy=e.clientY;sp=pos;el.classList.add("drag")});
-  el.addEventListener("pointermove",e=>{if(!dragging)return;const dx=e.clientX-sx,dy=e.clientY-sy;
+  let dist=0,downI;
+  const act=i=>{if(i!==idx)go(i);else location.href="/films/"+list[i].id+"/"};
+  el.addEventListener("pointerdown",e=>{dist=0;downI=e.target.closest(".disc")?.dataset.i;dragging=true;moved=0;axis=null;sx=e.clientX;sy=e.clientY;sp=pos;el.classList.add("drag")});
+  el.addEventListener("pointermove",e=>{if(!dragging)return;const dx=e.clientX-sx,dy=e.clientY-sy;dist=Math.max(dist,Math.hypot(dx,dy));
     if(!axis&&(Math.abs(dx)>6||Math.abs(dy)>6))axis=Math.abs(dx)>Math.abs(dy)?"x":"y";
     if(axis!=="x")return;moved=Math.abs(dx);if(!el.hasPointerCapture(e.pointerId))el.setPointerCapture(e.pointerId);pos=sp+dx;target=pos});
   const end=()=>{if(!dragging)return;dragging=false;el.classList.remove("drag");if(axis==="x"){const v=pos-sp;go(Math.round(-(pos+(Math.abs(v)>30?Math.sign(v)*gap*.35:0))/gap))}else target=-idx*gap};
-  el.addEventListener("pointerup",end);el.addEventListener("pointercancel",end);el.addEventListener("pointerleave",e=>{if(!el.hasPointerCapture(e.pointerId))end()});
-  el.addEventListener("click",e=>{const b=e.target.closest(".hit");if(!b||moved>6)return;const i=+b.dataset.i;if(i!==idx){go(i);return}
-    location.href="/films/"+list[i].id+"/"});
+  el.addEventListener("pointerup",()=>{const tap=dragging&&dist<10&&downI!=null;end();if(tap)act(+downI)});el.addEventListener("pointercancel",end);el.addEventListener("pointerleave",e=>{if(!el.hasPointerCapture(e.pointerId))end()});
+  el.addEventListener("click",e=>{const b=e.target.closest(".hit");if(b&&e.detail===0)act(+b.dataset.i)});
   document.getElementById("mtitle").addEventListener("click",()=>document.querySelector(".side").scrollIntoView({behavior:reduce?"auto":"smooth"}));
   const side=e=>{const s=e.target.closest("[data-step]");if(s)go(idx+ +s.dataset.step)};
   document.querySelector(".side").addEventListener("click",side);
@@ -216,7 +217,7 @@ function filmHTML(p){
       </div>
       <div class="frame">
         <span class="x tl"></span><span class="x tr"></span><span class="x bl"></span><span class="x br"></span>
-        ${discEl(p)}
+        ${p.hl?`<a class="disclink" href="${p.hl}" target="_blank" rel="noopener" aria-label="Watch ${esc(p.title)}">${discEl(p)}</a>`:discEl(p)}
         <div class="btnrow">${p.priv?"":`<a class="dbl" ${p.hl?`href="${p.hl}" target="_blank" rel="noopener"`:'aria-disabled="true"'}>Watch online</a>`}${p.full?`<a class="dbl" href="${p.full}" target="_blank" rel="noopener">Full film</a>`:`<a class="dbl" href="https://wa.me/919892951911" target="_blank" rel="noopener">Hire us for your event</a>`}</div>
       </div>
     </header>
