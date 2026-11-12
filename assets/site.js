@@ -19,25 +19,25 @@ const P=[
   syn:"Video coverage for the 7th edition of Mumbai Margazhi Mahotsavam, a festival of Carnatic music organised by Banyan Tree Events at St Andrews Auditorium, Bandra.",
   films:[["Films",[["Festival film","",null]]]]},
  {id:"symphony-of-santoor-2026",k:"event",title:"Symphony of Santoor",st:"Santoor",year:"2026",cer:"Santoor with chamber orchestra",
-  meta:[["Featuring","Rahul Shivkumar Sharma"],["Organised by","Banyan Tree Events"]],
+  meta:[["Venue","Jio World Convention Centre, Mumbai"],["Featuring","Rahul Shivkumar Sharma"],["Organised by","Banyan Tree Events"]],
   pal:["#d9c9f0","#5b4a9b","#15122b"],tag:"Santoor meets symphony",
   syn:"Video coverage of Symphony of Santoor, a Banyan Tree Events concert pairing santoor maestro Rahul Shivkumar Sharma with a chamber orchestra.",
-  films:[["Films",[["Concert film","",null]]]]},
+  priv:1,films:[]},
  {id:"barkha-ritu-2026",k:"event",title:"Barkha Ritu 2026",st:"Barkha Ritu",year:"2026",cer:"Festival of monsoon ragas",
   meta:[["Organised by","Banyan Tree Events"]],
   pal:["#9fd0d6","#2f6f8f","#12202e"],tag:"Ragas for the rains",
   syn:"Video coverage of Barkha Ritu 2026, Banyan Tree Events' festival of Indian classical music built around the ragas of the monsoon.",
-  films:[["Films",[["Festival film","",null]]]]},
+  priv:1,films:[]},
  {id:"samanvay-2026",k:"event",title:"Samanvay",st:"Samanvay",year:"2026",cer:"Hindustani and Carnatic jugalbandi",
-  meta:[["Date","11 June 2026"],["Venue","Nehru Centre, Mumbai"],["Featuring","Ashwini Bhide-Deshpande · Sudha Raghunathan"],["Organised by","Banyan Tree Events"]],
+  meta:[["Date","11 June 2026"],["Venue","Nehru Centre Auditorium, Mumbai"],["Featuring","Ashwini Bhide-Deshpande · Sudha Raghunathan"],["Organised by","Banyan Tree Events"]],
   pal:["#f0c27a","#a5562c","#2a1712"],tag:"Two traditions, one stage",
   syn:"Samanvay brings two classical traditions together through a live jugalbandi featuring Ashwini Bhide-Deshpande and Sudha Raghunathan. An evening shaped by listening, response, and the shared language of raga and rhythm.",
-  films:[["Films",[["Concert film","",null]]]]},
+  priv:1,films:[]},
  {id:"khusrau-kabir-2026",k:"event",title:"Khusrau-Kabir 2026",st:"Khusrau Kabir",year:"2026",cer:"Festival of Sufi and Bhakti poetry in music",
-  meta:[["Date","7 January 2026"],["Venue","Nehru Centre Auditorium, Worli, Mumbai"],["Organised by","Banyan Tree Events"]],
+  meta:[["Date","7 January 2026"],["Venue","Nehru Centre Auditorium, Mumbai"],["Organised by","Banyan Tree Events"]],
   pal:["#e3d6a8","#3f6b4f","#101d18"],tag:"Across centuries, in song",
   syn:"Video coverage of Khusrau-Kabir, the Banyan Tree Events concert series celebrating the shared spiritual philosophies, poetry and musical legacies of Hazrat Amir Khusrau and Saint Kabirdas.",
-  films:[["Films",[["Festival film","",null]]]]},
+  priv:1,films:[]},
  {id:"speak-greasy",img:"speak-greasy",k:"event",title:"Speak Greasy",st:"Speak Greasy",year:"Ongoing",cer:"Food talk show with Gauri Devidayal",meta:[["Guests","Multiple guests"]],
   pal:["#f0c08a","#8d5a3b","#22302c"],tag:"Chefs, stories, second helpings",syn:"Speak Greasy, a conversation series hosted by Gauri Devidayal with leading chefs, filmed multi-camera for episodic release.",
   hl:YT("pOGfNleMURE"),films:[["Episodes",[["Ep 6 · The Coastal Cuisine Connoisseur","Chef Sandeep Sreedharan",YT("pOGfNleMURE")],["Ep 5 · Teachings From The Tutor","Chef Mohib Farooqui",YT("sZvm4E3jV2A")]]]]},
@@ -212,12 +212,12 @@ function filmHTML(p){
       <h1 class="ftitle">${words}</h1>
       <div class="fcred"><span class="fb"><span class="cap">Filmed by</span>Dhaval Apex Video </span><span class="cap">${p.k==="wedding"?"Film":"Format"}</span>${esc(p.cer)}${p.l?'<span class="sample">Latest</span>':""}</div>
       <div class="rows">
-        ${[p.year&&["Year",p.year],...(p.meta||[]),["Films",String(p.films.reduce((n,g)=>n+g[1].filter(x=>x[2]).length,0)||"Coming soon")],["Studio","Mumbai"]].filter(Boolean).map(([a,b])=>`<div class="r${/^(Films|Studio|Role|Year)$/.test(a)?" minor":""}"><span class="cap">${esc(a)}</span><span class="v">${esc(b)}</span></div>`).join("")}
+        ${[p.year&&["Year",p.year],...(p.meta||[]),!p.priv&&["Films",String(p.films.reduce((n,g)=>n+g[1].filter(x=>x[2]).length,0)||"Coming soon")],["Studio","Mumbai"]].filter(Boolean).map(([a,b])=>`<div class="r${/^(Films|Studio|Role|Year)$/.test(a)?" minor":""}"><span class="cap">${esc(a)}</span><span class="v">${esc(b)}</span></div>`).join("")}
       </div>
       <div class="frame">
         <span class="x tl"></span><span class="x tr"></span><span class="x bl"></span><span class="x br"></span>
         ${discEl(p)}
-        <div class="btnrow"><a class="dbl" ${p.hl?`href="${p.hl}" target="_blank" rel="noopener"`:'aria-disabled="true"'}>Watch online</a>${p.full?`<a class="dbl" href="${p.full}" target="_blank" rel="noopener">Full film</a>`:`<a class="dbl" href="https://wa.me/919892951911" target="_blank" rel="noopener">Book now</a>`}</div>
+        <div class="btnrow">${p.priv?"":`<a class="dbl" ${p.hl?`href="${p.hl}" target="_blank" rel="noopener"`:'aria-disabled="true"'}>Watch online</a>`}${p.full?`<a class="dbl" href="${p.full}" target="_blank" rel="noopener">Full film</a>`:`<a class="dbl" href="https://wa.me/919892951911" target="_blank" rel="noopener">Book now</a>`}</div>
       </div>
     </header>
     <section class="still" id="still">
@@ -227,11 +227,11 @@ function filmHTML(p){
       ${p.hl?`<a class="dbl watch" href="${p.hl}" target="_blank" rel="noopener">Watch trailer</a>`:""}
     </section>
     <div class="band gut"><p class="syn">${esc(p.syn)}</p>
-      <section class="films"><h2>The Films</h2>
+      ${p.priv?"":`<section class="films"><h2>The Films</h2>
         <div class="cer">${p.films.map(([nm,items])=>`<div class="grp"><h3><span class="cap" style="font-size:10px">${esc(nm)}</span><span class="cap" style="font-size:10px">${String(++n).padStart(2,"0")}</span></h3>${items.map(([t,sub,url,type])=>url
           ?`<a class="row" href="${url}" target="_blank" rel="noopener"><span><span class="t">${esc(t)}</span>${sub?`<small>${esc(sub)}</small>`:""}</span><span class="go">${type||"Watch"} ↗</span></a>`
           :`<div class="row off"><span><span class="t">${esc(t)}</span>${sub?`<small>${esc(sub)}</small>`:""}</span><span class="go">Film coming soon</span></div>`).join("")}</div>`).join("")}</div>
-      </section>
+      </section>`}
     </div>
     <a class="next" href="/films/${nx.id}/" aria-label="Next production: ${esc(nx.title)}">
       <span class="lab cap">Next production</span>
