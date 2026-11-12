@@ -46,6 +46,11 @@
       "source": "/films/isha-meet",
       "destination": "/weddings/",
       "permanent": true
+    },
+    {
+      "source": "/films/samavay-khusrau-kabir-2026",
+      "destination": "/films/khusrau-kabir-2026/",
+      "permanent": true
     }
   ],
   "headers": [
