@@ -6,6 +6,46 @@
       "source": "/index.html",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/films/virasat-2025",
+      "destination": "/films/virasat-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/films/janfest-2025",
+      "destination": "/films/janfest-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/films/mumbai-margazhi-2025",
+      "destination": "/films/mumbai-margazhi-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/films/the-wadalis",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/films/parmarth-ek-utsav",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/films/dakshinayan",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/films/tejpal-motors-conclave",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/films/isha-meet",
+      "destination": "/weddings/",
+      "permanent": true
     }
   ],
   "headers": [

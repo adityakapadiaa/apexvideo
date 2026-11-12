@@ -366,3 +366,9 @@ footer{margin-top:44px}
 .trusted li.cover img{left:0;top:0;width:100%;height:100%;object-fit:cover}
 @media (max-width:860px){.trusted ul{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* logo */
+.nav .logo{display:block;line-height:0}
+.nav .logo img,.flogo img{display:block;border-radius:8px;border:1px solid var(--rule-2)}
+.flogo{display:flex;align-items:center;gap:14px}
+@media (max-width:520px){.nav .logo{display:block}.nav .logo img{width:30px;height:30px;border-radius:6px}.nav a.tab[data-k="contact"]{display:none}}
