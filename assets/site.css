@@ -372,6 +372,11 @@ footer{margin-top:44px}
 .nav .logo img,.flogo img{display:block;border-radius:8px;border:1px solid var(--rule-2)}
 .flogo{display:flex;align-items:center;gap:14px}
 .disclink{display:block;border-radius:50%}
+/* home heading: brand line with the descriptive line beneath */
+.home .intro{align-items:flex-end}
+.home .intro h1{font-size:clamp(26px,3.6vw,52px);line-height:1.02}
+.home .intro h1 .sub{display:block;margin-top:10px;font-size:clamp(11px,1.05vw,15px);font-weight:600;letter-spacing:.14em;line-height:1.3;color:var(--soft)}
+@media (max-width:600px){.home .intro h1{font-size:26px}.home .intro h1 i{display:block}.home .intro h1 .sub{margin-top:8px}}
 /* no tap flash on touch; keyboard focus ring stays */
 *{-webkit-tap-highlight-color:transparent}
 .disc,.disc *,.disclink{-webkit-touch-callout:none;user-select:none;-webkit-user-select:none}

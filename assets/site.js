@@ -114,7 +114,7 @@ const state={event:0,wedding:0};let cleanup=null;
 function home(k){
   const list=P.filter(p=>p.k===k);
   return `<section class="home gut">
-    <div class="intro"><h1>${k==="wedding"?"Wedding films, <i>ceremony by ceremony</i>":"Multi-camera films of <i>events &amp; live shows</i>"}</h1><span class="cap" style="color:var(--soft)">${list.length} films · drag to browse</span></div>
+    <div class="intro"><h1>${k==="wedding"?"Apex Video. <i>Every ritual, every glance.</i>":"Apex Video. <i>Every moment, every angle.</i>"}<span class="sub">${k==="wedding"?"Wedding films, ceremony by ceremony":"Multi-camera films of events &amp; live shows"}</span></h1><span class="cap" style="color:var(--soft)">${list.length} films · drag to browse</span></div>
     <div class="layout">
       <div class="side">
         <div class="credits" id="credits"></div>
