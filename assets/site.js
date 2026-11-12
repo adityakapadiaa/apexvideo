@@ -217,7 +217,7 @@ function filmHTML(p){
       <div class="frame">
         <span class="x tl"></span><span class="x tr"></span><span class="x bl"></span><span class="x br"></span>
         ${discEl(p)}
-        <div class="btnrow">${p.priv?"":`<a class="dbl" ${p.hl?`href="${p.hl}" target="_blank" rel="noopener"`:'aria-disabled="true"'}>Watch online</a>`}${p.full?`<a class="dbl" href="${p.full}" target="_blank" rel="noopener">Full film</a>`:`<a class="dbl" href="https://wa.me/919892951911" target="_blank" rel="noopener">Book now</a>`}</div>
+        <div class="btnrow">${p.priv?"":`<a class="dbl" ${p.hl?`href="${p.hl}" target="_blank" rel="noopener"`:'aria-disabled="true"'}>Watch online</a>`}${p.full?`<a class="dbl" href="${p.full}" target="_blank" rel="noopener">Full film</a>`:`<a class="dbl" href="https://wa.me/919892951911" target="_blank" rel="noopener">Hire us for your event</a>`}</div>
       </div>
     </header>
     <section class="still" id="still">
