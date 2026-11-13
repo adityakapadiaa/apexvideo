@@ -371,6 +371,31 @@ footer{margin-top:44px}
 .nav .logo{display:block;line-height:0}
 .nav .logo img,.flogo img{display:block;border-radius:8px;border:1px solid var(--rule-2)}
 .flogo{display:flex;align-items:center;gap:14px}
+/* quote button, social icons, floating WhatsApp */
+.qbtn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 32px;border-radius:999px;background:var(--ink);color:var(--paper);font-weight:700;font-size:17px;letter-spacing:-.01em;text-decoration:none;white-space:nowrap;transition:transform .2s,background .2s}
+.qbtn:hover{transform:translateY(-1px);background:var(--accent)}
+.contact .social{flex-direction:row;gap:12px;align-items:center}
+.contact .social a{width:46px;height:46px;border:1px solid var(--rule-2);border-radius:50%;display:grid;place-items:center;transition:background .2s,color .2s,border-color .2s}
+.contact .social a:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.contact .social svg{width:22px;height:22px}
+.wafab{position:fixed;z-index:65;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 26px #00000059;transition:transform .2s}
+.wafab:hover{transform:scale(1.06)}
+.wafab svg{width:30px;height:30px}
+footer .in{padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+@media (max-width:600px){.contact .social{justify-content:flex-end}.qbtn{width:100%}.fhead{align-items:stretch}}
+/* contact section only: no ruled lines; a tinted band sets it apart instead */
+body footer{border-top:0;background:var(--paper-2)}
+body footer .contact>div{border-top:0;padding-top:0}
+main:has(.next)~footer{margin-top:0}
+/* phones: even spacing between services, trusted by and the contact section */
+@media (max-width:600px){
+  body .strip{margin-top:64px}
+  body .trusted{margin-top:64px}
+  body footer{margin-top:64px}
+  body footer .in{padding-top:48px}
+  body .contact{gap:20px}
+  body .svc{gap:22px}
+}
 .disclink{display:block;border-radius:50%}
 /* home heading: brand line with the descriptive line beneath */
 .home .intro{align-items:flex-end}
