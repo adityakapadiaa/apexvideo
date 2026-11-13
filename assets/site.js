@@ -218,14 +218,14 @@ function filmHTML(p){
       <div class="frame">
         <span class="x tl"></span><span class="x tr"></span><span class="x bl"></span><span class="x br"></span>
         ${p.hl?`<a class="disclink" href="${p.hl}" target="_blank" rel="noopener" aria-label="Watch ${esc(p.title)}">${discEl(p)}</a>`:discEl(p)}
-        <div class="btnrow">${p.priv?"":`<a class="dbl" ${p.hl?`href="${p.hl}" target="_blank" rel="noopener"`:'aria-disabled="true"'}>Watch online</a>`}${p.full?`<a class="dbl" href="${p.full}" target="_blank" rel="noopener">Full film</a>`:`<a class="dbl" href="https://wa.me/919892951911" target="_blank" rel="noopener">Hire us for your event</a>`}</div>
+        <div class="btnrow">${!p.hl?"":`<a class="dbl" ${p.hl?`href="${p.hl}" target="_blank" rel="noopener"`:'aria-disabled="true"'}>Watch online</a>`}${p.full?`<a class="dbl" href="${p.full}" target="_blank" rel="noopener">Full film</a>`:`<a class="dbl" href="https://wa.me/919892951911" target="_blank" rel="noopener">Hire us for your event</a>`}</div>
       </div>
     </header>
     <section class="still" id="still">
       <canvas id="stillCv"></canvas>
       <div class="lines"><div></div><div></div><div></div><div></div></div>
       ${lines.map((w,i)=>`<span class="word" style="${i%2?"right":"left"}:6%;top:calc(${(i+1)*25}% - 2px);transform:translateY(-100%)">${esc(w)}</span>`).join("")}
-      ${p.hl?`<a class="dbl watch" href="${p.hl}" target="_blank" rel="noopener">Watch trailer</a>`:""}
+      
     </section>
     <div class="band gut"><p class="syn">${esc(p.syn)}</p>
       ${p.priv?"":`<section class="films"><h2>The Films</h2>
