@@ -8,6 +8,11 @@
       "permanent": true
     },
     {
+      "source": "/studio",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
       "source": "/films/virasat-2025",
       "destination": "/films/virasat-2026/",
       "permanent": true
@@ -24,22 +29,22 @@
     },
     {
       "source": "/films/the-wadalis",
-      "destination": "/",
+      "destination": "/events/",
       "permanent": true
     },
     {
       "source": "/films/parmarth-ek-utsav",
-      "destination": "/",
+      "destination": "/events/",
       "permanent": true
     },
     {
       "source": "/films/dakshinayan",
-      "destination": "/",
+      "destination": "/events/",
       "permanent": true
     },
     {
       "source": "/films/tejpal-motors-conclave",
-      "destination": "/",
+      "destination": "/events/",
       "permanent": true
     },
     {

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-IN">
+<html lang="en-IN" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -17,124 +17,115 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0b0c10" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#0d0e11">
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
-<script>try{var t=localStorage.getItem("apex-theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script>try{var t=localStorage.getItem("apex-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dhavalapexvideo.in/"},{"@type":"ListItem","position":2,"name":"Weddings","item":"https://dhavalapexvideo.in/weddings/"},{"@type":"ListItem","position":3,"name":"Reema & Chaitanya","item":"https://dhavalapexvideo.in/films/reema-chaitanya/"}]}</script>
 </head>
 <body>
-<nav class="nav" aria-label="Main">
-  <a class="logo" href="/" aria-label="Apex Video home"><img src="/logo.png" width="40" height="40" alt="Apex Video logo"></a>
-  <a class="tab" href="/" data-k="event">Events &amp; Live</a>
-  <a class="tab" href="/weddings/" data-k="wedding" aria-current="page">Weddings</a>
-  <a class="tab" href="/studio/" data-k="studio">Studio</a>
-  <a class="tab" href="#contact" data-k="contact">Contact</a>
-  <div class="idx">
-    <button class="idxbtn" id="idxBtn" aria-expanded="false" aria-controls="idxPanel">Index <svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1 5 5 9 1" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></button>
-    <div class="idx-panel" id="idxPanel" hidden><h4 class="cap">Events &amp; Live</h4><a href="/films/virasat-2026/"><span>Virasat 2026</span><span>Latest</span></a><a href="/films/janfest-2026/"><span>Janfest 2026</span><span>Latest</span></a><a href="/films/mumbai-margazhi-2026/"><span>Mumbai Margazhi 2026</span><span>Latest</span></a><a href="/films/symphony-of-santoor-2026/"><span>Symphony of Santoor</span><span>2026</span></a><a href="/films/barkha-ritu-2026/"><span>Barkha Ritu 2026</span><span>2026</span></a><a href="/films/samanvay-2026/"><span>Samanvay</span><span>2026</span></a><a href="/films/khusrau-kabir-2026/"><span>Khusrau-Kabir 2026</span><span>2026</span></a><a href="/films/speak-greasy/"><span>Speak Greasy</span><span>Ongoing</span></a><a href="/films/bh-style-icons/"><span>BH Style Icons</span><span>2023</span></a><a href="/films/indian-music-conference-2019/"><span>Indian Music Conference</span><span>2019</span></a><h4 class="cap">Weddings</h4><a href="/films/yash-shreya/"><span>Yash &amp; Shreya</span><span>2026</span></a><a href="/films/shikhar-rasna/"><span>Shikhar &amp; Rasna</span><span>2024</span></a><a href="/films/riya-vrajesh/"><span>Riya &amp; Vrajesh</span><span></span></a><a href="/films/mayur-bhairavi/"><span>Mayur &amp; Bhairavi</span><span></span></a><a href="/films/riddhi-gautam/"><span>Riddhi &amp; Gautam</span><span></span></a><a href="/films/pooja-vikas/"><span>Pooja &amp; Vikas</span><span></span></a><a href="/films/harsh-hiral/"><span>Harsh &amp; Hiral</span><span></span></a><a href="/films/reema-chaitanya/"><span>Reema &amp; Chaitanya</span><span></span></a></div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/" aria-label="Apex Video, home"><img src="/logo.png" width="42" height="42" alt="Apex Video logo"><b>Apex Video</b></a>
+  <nav class="menu" id="menu" aria-label="Main"><a href="/">Home</a><a href="/events/">Events &amp; Live</a><a href="/weddings/" aria-current="page">Weddings</a><a href="/services/">Services</a><a href="/about/">About Us</a><a href="#contact">Contact</a></nav>
+  <div class="tools">
+    <a class="btn sm enq" href="https://wa.me/919892951911" target="_blank" rel="noopener">Enquire</a>
+    <button class="icon" id="themeBtn" type="button" aria-label="Switch to light mode"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 2.500v2.500M12 19v2.500M2.500 12H5M19 12h2.500M5.300 5.300l1.800 1.800M16.900 16.900l1.800 1.800M5.300 18.700l1.800-1.800M16.900 7.100l1.800-1.800" stroke="currentColor" stroke-width="1.700" stroke-linecap="round"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.500A8.500 8.500 0 0 1 9.500 4a8.500 8.500 0 1 0 10.500 10.500z" fill="none" stroke="currentColor" stroke-width="1.700" stroke-linejoin="round"/></svg></button>
+    <button class="icon burger" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
   </div>
-  <button class="themebtn" id="themeBtn" type="button" aria-label="Switch to dark mode"><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
-</nav>
+</div></header>
+<main id="main">
 
-<main id="app"><article class="film fade-in">
-    <header class="gut">
-      <h1 class="ftitle"><span class="w"><span style="animation-delay:0.1s">REEMA</span></span> <span class="w"><span style="animation-delay:0.2s">&amp;</span></span> <span class="w"><span style="animation-delay:0.30000000000000004s">CHAITANYA</span></span></h1>
-      <div class="fcred"><span class="fb"><span class="cap">Filmed by</span>Dhaval Apex Video </span><span class="cap">Film</span>Engagement ceremony</div>
-      <div class="rows">
-        <div class="r minor"><span class="cap">Films</span><span class="v">1</span></div><div class="r minor"><span class="cap">Studio</span><span class="v">Mumbai</span></div>
-      </div>
-      <div class="frame">
-        <span class="x tl"></span><span class="x tr"></span><span class="x bl"></span><span class="x br"></span>
-        <a class="disclink" href="https://youtu.be/jgHTyb6HuWs" target="_blank" rel="noopener" aria-label="Watch Reema &amp; Chaitanya"><div class="disc" ><div class="face"><div class="spin"><svg viewBox="0 0 400 400" aria-hidden="true"><defs>
-    <radialGradient id="a52g" cx="32%" cy="30%" r="90%"><stop offset="0" stop-color="#f0b9a0"/><stop offset=".5" stop-color="#a24b3a"/><stop offset="1" stop-color="#2b2420"/></radialGradient>
-    <radialGradient id="a52s" cx="30%" cy="26%" r="30%"><stop offset="0" stop-color="#fff8e6" stop-opacity=".9"/><stop offset="1" stop-color="#fff8e6" stop-opacity="0"/></radialGradient>
-    <linearGradient id="a52h" x1="0" y1="0" x2="1" y2="1"><stop offset=".42" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".3"/><stop offset=".58" stop-color="#fff" stop-opacity="0"/></linearGradient>
-    <path id="a52p" d="M200,200 m-172,0 a172,172 0 1,1 344,0 a172,172 0 1,1 -344,0"/>
-    <mask id="a52m"><rect width="400" height="400" fill="#fff"/><circle cx="200" cy="200" r="50" fill="#000"/></mask>
-    <filter id="a52n" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="53"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .25 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
-    <radialGradient id="a52v" cx="50%" cy="50%" r="50%"><stop offset=".62" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
-  </defs><g mask="url(#a52m)">
-    <circle cx="200" cy="200" r="200" fill="url(#a52g)"/>
-    <image href="/img/reema-chaitanya.webp" x="-60" y="0" width="520" height="400" preserveAspectRatio="xMidYMid slice"/><circle cx="200" cy="200" r="200" fill="url(#a52v)"/>
-    <circle cx="200" cy="200" r="200" fill="#000" filter="url(#a52n)"/>
-    <text font-family="Manrope, Arial, sans-serif" font-size="10" letter-spacing="3" fill="#fff" fill-opacity=".8"><textPath href="#a52p">ENGAGEMENT CEREMONY · DHAVAL APEX VIDEO · ENGAGEMENT CEREMONY · DHAVAL APEX VIDEO · </textPath></text>
-    <g fill="#fff" text-anchor="middle" font-family="Manrope, Arial, sans-serif" display="none">
-      <text x="200" y="118" font-weight="700" font-size="35.00000000000001" fill-opacity=".92">Reema</text>
-      <text x="200" y="150" font-size="16" font-style="italic" fill-opacity=".8">&amp;</text><text x="200" y="300" font-size="35.00000000000001" fill-opacity=".92">Chaitanya</text>
-      <text x="200" y="328" font-family="Manrope, Arial, sans-serif" font-size="9" letter-spacing="3" fill-opacity=".75">APEX · WEDDING FILM</text>
-    </g>
-    <circle cx="200" cy="200" r="72" fill="none" stroke="#fff" stroke-opacity=".25"/>
-    <circle cx="200" cy="200" r="64" fill="#e9e9e7" fill-opacity=".92"/>
-    <circle cx="200" cy="200" r="58" fill="none" stroke="#b9b9b6" stroke-width="2"/>
-    <circle cx="200" cy="200" r="200" fill="url(#a52h)"/>
-    <circle cx="200" cy="200" r="198" fill="none" stroke="#000" stroke-opacity=".15" stroke-width="3"/>
-  </g></svg></div></div><svg class="scrib" viewBox="-118 -118 236 236" aria-hidden="true"><path d="M-33.6,-92.7 Q-23.9,-95.8 -18.9,-96.8 Q-14.0,-97.9 -8.9,-98.5 Q-3.8,-99.1 1.4,-99.2 Q6.6,-99.3 11.7,-99.0 Q16.9,-98.6 22.0,-97.8 Q27.1,-96.9 32.1,-95.6 Q37.1,-94.2 42.0,-92.4 Q46.9,-90.6 51.5,-88.4 Q56.2,-86.1 60.6,-83.4 Q65.0,-80.7 69.1,-77.6 Q73.2,-74.5 76.9,-71.0 Q80.7,-67.5 84.0,-63.6 Q87.4,-59.8 90.3,-55.7 Q93.3,-51.5 95.7,-47.1 Q98.2,-42.7 100.2,-38.1 Q102.2,-33.5 103.6,-28.7 Q105.1,-23.9 106.1,-19.0 Q107.0,-14.1 107.4,-9.1 Q107.8,-4.2 107.7,0.8 Q107.6,5.8 107.0,10.7 Q106.3,15.6 105.1,20.4 Q104.0,25.3 102.3,30.0 Q100.6,34.6 98.4,39.1 Q96.3,43.6 93.6,47.9 Q91.0,52.1 88.0,56.1 Q84.9,60.0 81.4,63.7 Q78.0,67.3 74.2,70.6 Q70.4,73.9 66.3,76.8 Q62.2,79.7 57.8,82.2 Q53.4,84.7 48.8,86.8 Q44.2,88.9 39.4,90.5 Q34.6,92.2 29.7,93.4 Q24.8,94.5 19.8,95.3 Q14.8,96.0 9.8,96.3 Q4.8,96.5 -0.2,96.3 Q-5.2,96.1 -10.2,95.5 Q-15.1,94.9 -20.0,93.8 Q-24.8,92.7 -29.5,91.2 Q-34.2,89.7 -38.7,87.8 Q-43.2,85.9 -47.5,83.6 Q-51.8,81.3 -55.8,78.6 Q-59.8,76.0 -63.5,73.0 Q-67.3,70.0 -70.7,66.6 Q-74.1,63.3 -77.2,59.7 Q-80.2,56.2 -82.9,52.3 Q-85.6,48.5 -87.9,44.4 Q-90.2,40.3 -92.1,36.1 Q-94.0,31.9 -95.4,27.5 Q-96.9,23.1 -97.9,18.6 Q-98.9,14.1 -99.5,9.5 Q-100.0,4.9 -100.1,0.3 Q-100.2,-4.3 -99.9,-9.0 Q-99.5,-13.6 -98.7,-18.2 Q-97.9,-22.7 -96.6,-27.2 Q-95.3,-31.7 -93.6,-36.1 Q-91.8,-40.5 -89.7,-44.7 Q-87.5,-48.9 -84.9,-52.9 Q-82.3,-56.9 -79.3,-60.7 Q-76.3,-64.4 -72.9,-67.9 Q-69.5,-71.4 -65.8,-74.6 Q-62.0,-77.8 -57.9,-80.6 Q-53.9,-83.5 -49.5,-85.9 Q-45.1,-88.4 -40.5,-90.4 Q-35.9,-92.5 -31.2,-94.3 Q-26.4,-96.1 -21.5,-97.6 Q-16.6,-99.1 -11.4,-100.2 Q-6.2,-101.2 -0.9,-101.8 Q4.5,-102.3 10.0,-102.4 Q15.5,-102.4 21.1,-101.9" style="--L:760"/></svg></div></a>
-        <div class="btnrow"><a class="dbl" href="https://youtu.be/jgHTyb6HuWs" target="_blank" rel="noopener">Watch online</a><a class="dbl" href="https://wa.me/919892951911" target="_blank" rel="noopener">Hire us for your event</a></div>
-      </div>
-    </header>
-    <section class="still" id="still">
-      <canvas id="stillCv"></canvas>
-      <div class="lines"><div></div><div></div><div></div><div></div></div>
-      <span class="word" style="left:6%;top:calc(25% - 2px);transform:translateY(-100%)">The</span><span class="word" style="right:6%;top:calc(50% - 2px);transform:translateY(-100%)">ring,</span><span class="word" style="left:6%;top:calc(75% - 2px);transform:translateY(-100%)">the</span><span class="word" style="right:6%;top:calc(100% - 2px);transform:translateY(-100%)">promise</span>
-      <a class="dbl watch" href="https://youtu.be/jgHTyb6HuWs" target="_blank" rel="noopener">Watch trailer</a>
-    </section>
-    <div class="band gut"><p class="syn">Reema and Chaitanya's engagement ceremony on film.</p>
-      <section class="films"><h2>The Films</h2>
-        <div class="cer"><div class="grp"><h3><span class="cap" style="font-size:10px">The film</span><span class="cap" style="font-size:10px">01</span></h3><a class="row" href="https://youtu.be/jgHTyb6HuWs" target="_blank" rel="noopener"><span><span class="t">Engagement Ceremony</span></span><span class="go">Watch ↗</span></a></div></div>
-      </section>
-    </div>
-    <a class="next" href="/films/yash-shreya/" aria-label="Next production: Yash &amp; Shreya">
-      <span class="lab cap">Next production</span>
-      <span class="nt">Yash &amp; Shreya</span>
-      <div class="disc" ><div class="face"><div class="spin"><svg viewBox="0 0 400 400" aria-hidden="true"><defs>
-    <radialGradient id="a53g" cx="32%" cy="30%" r="90%"><stop offset="0" stop-color="#f2b65c"/><stop offset=".5" stop-color="#b8452f"/><stop offset="1" stop-color="#1d4f52"/></radialGradient>
-    <radialGradient id="a53s" cx="30%" cy="26%" r="30%"><stop offset="0" stop-color="#fff8e6" stop-opacity=".9"/><stop offset="1" stop-color="#fff8e6" stop-opacity="0"/></radialGradient>
-    <linearGradient id="a53h" x1="0" y1="0" x2="1" y2="1"><stop offset=".42" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".3"/><stop offset=".58" stop-color="#fff" stop-opacity="0"/></linearGradient>
-    <path id="a53p" d="M200,200 m-172,0 a172,172 0 1,1 344,0 a172,172 0 1,1 -344,0"/>
-    <mask id="a53m"><rect width="400" height="400" fill="#fff"/><circle cx="200" cy="200" r="50" fill="#000"/></mask>
-    <filter id="a53n" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="54"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .25 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
-    <radialGradient id="a53v" cx="50%" cy="50%" r="50%"><stop offset=".62" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
-  </defs><g mask="url(#a53m)">
-    <circle cx="200" cy="200" r="200" fill="url(#a53g)"/>
-    <image href="/img/yash-shreya.webp" x="-60" y="0" width="520" height="400" preserveAspectRatio="xMidYMid slice"/><circle cx="200" cy="200" r="200" fill="url(#a53v)"/>
-    <circle cx="200" cy="200" r="200" fill="#000" filter="url(#a53n)"/>
-    <text font-family="Manrope, Arial, sans-serif" font-size="10" letter-spacing="3" fill="#fff" fill-opacity=".8"><textPath href="#a53p">POOJA · MEHENDI · MANDAP &amp; MAMERU · HALDI · SANGEET · WEDDING · DHAVAL APEX VIDEO · 2026 · POOJA · MEHENDI · MANDAP &amp; MAMERU · HALDI · SANGEET · WEDDING · DHAVAL APEX VIDEO · 2026 · </textPath></text>
-    <g fill="#fff" text-anchor="middle" font-family="Manrope, Arial, sans-serif" display="none">
-      <text x="200" y="118" font-weight="700" font-size="40" fill-opacity=".92">Yash</text>
-      <text x="200" y="150" font-size="16" font-style="italic" fill-opacity=".8">&amp;</text><text x="200" y="300" font-size="40" fill-opacity=".92">Shreya</text>
-      <text x="200" y="328" font-family="Manrope, Arial, sans-serif" font-size="9" letter-spacing="3" fill-opacity=".75">APEX · WEDDING FILM</text>
-    </g>
-    <circle cx="200" cy="200" r="72" fill="none" stroke="#fff" stroke-opacity=".25"/>
-    <circle cx="200" cy="200" r="64" fill="#e9e9e7" fill-opacity=".92"/>
-    <circle cx="200" cy="200" r="58" fill="none" stroke="#b9b9b6" stroke-width="2"/>
-    <circle cx="200" cy="200" r="200" fill="url(#a53h)"/>
-    <circle cx="200" cy="200" r="198" fill="none" stroke="#000" stroke-opacity=".15" stroke-width="3"/>
-  </g></svg></div></div><svg class="scrib" viewBox="-118 -118 236 236" aria-hidden="true"><path d="M-33.6,-92.7 Q-23.9,-95.8 -18.9,-96.8 Q-14.0,-97.9 -8.9,-98.5 Q-3.8,-99.1 1.4,-99.2 Q6.6,-99.3 11.7,-99.0 Q16.9,-98.6 22.0,-97.8 Q27.1,-96.9 32.1,-95.6 Q37.1,-94.2 42.0,-92.4 Q46.9,-90.6 51.5,-88.4 Q56.2,-86.1 60.6,-83.4 Q65.0,-80.7 69.1,-77.6 Q73.2,-74.5 76.9,-71.0 Q80.7,-67.5 84.0,-63.6 Q87.4,-59.8 90.3,-55.7 Q93.3,-51.5 95.7,-47.1 Q98.2,-42.7 100.2,-38.1 Q102.2,-33.5 103.6,-28.7 Q105.1,-23.9 106.1,-19.0 Q107.0,-14.1 107.4,-9.1 Q107.8,-4.2 107.7,0.8 Q107.6,5.8 107.0,10.7 Q106.3,15.6 105.1,20.4 Q104.0,25.3 102.3,30.0 Q100.6,34.6 98.4,39.1 Q96.3,43.6 93.6,47.9 Q91.0,52.1 88.0,56.1 Q84.9,60.0 81.4,63.7 Q78.0,67.3 74.2,70.6 Q70.4,73.9 66.3,76.8 Q62.2,79.7 57.8,82.2 Q53.4,84.7 48.8,86.8 Q44.2,88.9 39.4,90.5 Q34.6,92.2 29.7,93.4 Q24.8,94.5 19.8,95.3 Q14.8,96.0 9.8,96.3 Q4.8,96.5 -0.2,96.3 Q-5.2,96.1 -10.2,95.5 Q-15.1,94.9 -20.0,93.8 Q-24.8,92.7 -29.5,91.2 Q-34.2,89.7 -38.7,87.8 Q-43.2,85.9 -47.5,83.6 Q-51.8,81.3 -55.8,78.6 Q-59.8,76.0 -63.5,73.0 Q-67.3,70.0 -70.7,66.6 Q-74.1,63.3 -77.2,59.7 Q-80.2,56.2 -82.9,52.3 Q-85.6,48.5 -87.9,44.4 Q-90.2,40.3 -92.1,36.1 Q-94.0,31.9 -95.4,27.5 Q-96.9,23.1 -97.9,18.6 Q-98.9,14.1 -99.5,9.5 Q-100.0,4.9 -100.1,0.3 Q-100.2,-4.3 -99.9,-9.0 Q-99.5,-13.6 -98.7,-18.2 Q-97.9,-22.7 -96.6,-27.2 Q-95.3,-31.7 -93.6,-36.1 Q-91.8,-40.5 -89.7,-44.7 Q-87.5,-48.9 -84.9,-52.9 Q-82.3,-56.9 -79.3,-60.7 Q-76.3,-64.4 -72.9,-67.9 Q-69.5,-71.4 -65.8,-74.6 Q-62.0,-77.8 -57.9,-80.6 Q-53.9,-83.5 -49.5,-85.9 Q-45.1,-88.4 -40.5,-90.4 Q-35.9,-92.5 -31.2,-94.3 Q-26.4,-96.1 -21.5,-97.6 Q-16.6,-99.1 -11.4,-100.2 Q-6.2,-101.2 -0.9,-101.8 Q4.5,-102.3 10.0,-102.4 Q15.5,-102.4 21.1,-101.9" style="--L:760"/></svg></div>
-    </a>
-  </article></main>
+<article>
+<header class="fhead"><div class="wrap">
+  <p class="crumbs"><a href="/weddings/">Weddings</a></p>
+  <h1 class="display">Reema &amp; Chaitanya</h1>
+  <p class="fsub">Engagement ceremony</p>
+  <p class="btns"><a class="btn" href="https://youtu.be/jgHTyb6HuWs" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg>Watch the film</a><a class="btn ghost" href="#contact">Hire us for your event</a></p>
+</div></header>
+<div class="wrap"><div class="bigsleeve"><a class="cover" href="https://youtu.be/jgHTyb6HuWs" target="_blank" rel="noopener" aria-label="Watch Reema &amp; Chaitanya on YouTube"><img src="/img/reema-chaitanya.webp" width="640" height="360" fetchpriority="high" alt="Reema &amp; Chaitanya, engagement ceremony filmed by Dhaval Apex Video"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg></span></a><div class="fdisc" aria-hidden="true"><div class="spin"><svg viewBox="0 0 400 400" aria-hidden="true" focusable="false"><defs>
+<radialGradient id="d82g" cx="32%" cy="30%" r="90%"><stop offset="0" stop-color="#f0b9a0"/><stop offset=".5" stop-color="#a24b3a"/><stop offset="1" stop-color="#2b2420"/></radialGradient>
+<radialGradient id="d82s" cx="30%" cy="26%" r="30%"><stop offset="0" stop-color="#fff8e6" stop-opacity=".9"/><stop offset="1" stop-color="#fff8e6" stop-opacity="0"/></radialGradient>
+<linearGradient id="d82h" x1="0" y1="0" x2="1" y2="1"><stop offset=".42" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".3"/><stop offset=".58" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<path id="d82p" d="M200,200 m-172,0 a172,172 0 1,1 344,0 a172,172 0 1,1 -344,0"/>
+<mask id="d82m"><rect width="400" height="400" fill="#fff"/><circle cx="200" cy="200" r="50" fill="#000"/></mask>
 
-<footer class="gut" id="contact">
-  <div class="in">
-    <div class="fhead"><p class="cta">Tell us about your project. <i>We'll prepare a tailored proposal.</i></p><a class="dbl" href="https://wa.me/919892951911" target="_blank" rel="noopener">Get a quote</a></div>
-    <div class="contact">
-      <div><div class="cap">Call &amp; WhatsApp</div><div class="v"><span>Dhaval Kapadia</span>
-        <span class="ph"><span>+91 98929 51911</span><button class="copy" data-copy="+919892951911">Copy</button></span>
-        <span class="ph"><span>+91 91466 68617</span><button class="copy" data-copy="+919146668617">Copy</button></span></div></div>
-      <div><div class="cap">Location</div><div class="v"><span class="ph"><span>Mumbai, India</span></span></div></div>
-      <div><div class="cap">Email</div><div class="v"><span class="ph"><span>dhavalkapadiaapex@gmail.com</span><button class="copy" data-copy="dhavalkapadiaapex@gmail.com">Copy</button></span></div></div>
-      <div><div class="cap">Follow</div><div class="v"><a href="https://www.instagram.com/apex_video/" target="_blank" rel="noopener">Instagram @apex_video</a><a href="https://youtube.com/@dhavalkapadiaapex" target="_blank" rel="noopener">YouTube @dhavalkapadiaapex</a></div></div>
-    </div>
-    <div class="legal"><span class="flogo"><img src="/logo.png" width="56" height="56" alt="Apex Video logo"><span>© 2026 Dhaval Apex Video · Mumbai</span></span><span>30+ years behind the camera</span></div>
+<radialGradient id="d82v" cx="50%" cy="50%" r="50%"><stop offset=".62" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
+</defs><g mask="url(#d82m)">
+<circle cx="200" cy="200" r="200" fill="url(#d82g)"/>
+<image href="/img/reema-chaitanya.webp" x="-60" y="0" width="520" height="400" preserveAspectRatio="xMidYMid slice"/><circle cx="200" cy="200" r="200" fill="url(#d82v)"/>
+
+<text font-family="Manrope, Arial, sans-serif" font-size="10" letter-spacing="3" fill="#fff" fill-opacity=".8"><textPath href="#d82p">ENGAGEMENT CEREMONY · DHAVAL APEX VIDEO · ENGAGEMENT CEREMONY · DHAVAL APEX VIDEO · </textPath></text>
+
+<circle cx="200" cy="200" r="72" fill="none" stroke="#fff" stroke-opacity=".25"/>
+<circle cx="200" cy="200" r="64" fill="#e9e9e7" fill-opacity=".92"/>
+<circle cx="200" cy="200" r="58" fill="none" stroke="#b9b9b6" stroke-width="2"/>
+<circle cx="200" cy="200" r="200" fill="url(#d82h)"/>
+<circle cx="200" cy="200" r="198" fill="none" stroke="#000" stroke-opacity=".15" stroke-width="3"/>
+</g></svg></div></div></div></div>
+<section class="sec"><div class="wrap fbody">
+  <div><p class="eyebrow">The film</p><p class="big">The ring, the promise</p><p class="txt">Reema and Chaitanya's engagement ceremony on film.</p></div>
+  <div class="details"><p class="eyebrow" style="margin-bottom:14px">Details</p><dl class="rows"><div><dt>Filmed by</dt><dd>Dhaval Apex Video, Mumbai</dd></div></dl></div>
+</div></section>
+<section class="sec alt" aria-labelledby="watchH"><div class="wrap">
+  <div class="shead"><div><p class="eyebrow">Watch</p><h2 class="h2" id="watchH">The film</h2></div></div>
+  <div class="watch"><a href="https://youtu.be/jgHTyb6HuWs" target="_blank" rel="noopener"><span><span class="t">Engagement Ceremony</span><small></small></span><span class="go">Watch ↗</span></a></div>
+</div></section>
+<a class="next" href="/films/yash-shreya/" aria-label="Next project: Yash &amp; Shreya"><span class="eyebrow">Next project</span><span class="nt">Yash &amp; Shreya</span><div class="disc"><div class="face"><div class="spin"><svg viewBox="0 0 400 400" aria-hidden="true" focusable="false"><defs>
+<radialGradient id="d83g" cx="32%" cy="30%" r="90%"><stop offset="0" stop-color="#f2b65c"/><stop offset=".5" stop-color="#b8452f"/><stop offset="1" stop-color="#1d4f52"/></radialGradient>
+<radialGradient id="d83s" cx="30%" cy="26%" r="30%"><stop offset="0" stop-color="#fff8e6" stop-opacity=".9"/><stop offset="1" stop-color="#fff8e6" stop-opacity="0"/></radialGradient>
+<linearGradient id="d83h" x1="0" y1="0" x2="1" y2="1"><stop offset=".42" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".3"/><stop offset=".58" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<path id="d83p" d="M200,200 m-172,0 a172,172 0 1,1 344,0 a172,172 0 1,1 -344,0"/>
+<mask id="d83m"><rect width="400" height="400" fill="#fff"/><circle cx="200" cy="200" r="50" fill="#000"/></mask>
+<filter id="d83n" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="84"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .25 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+<radialGradient id="d83v" cx="50%" cy="50%" r="50%"><stop offset=".62" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
+</defs><g mask="url(#d83m)">
+<circle cx="200" cy="200" r="200" fill="url(#d83g)"/>
+<image href="/img/yash-shreya.webp" x="-60" y="0" width="520" height="400" preserveAspectRatio="xMidYMid slice"/><circle cx="200" cy="200" r="200" fill="url(#d83v)"/>
+<circle cx="200" cy="200" r="200" fill="#000" filter="url(#d83n)"/>
+<text font-family="Manrope, Arial, sans-serif" font-size="10" letter-spacing="3" fill="#fff" fill-opacity=".8"><textPath href="#d83p">POOJA · MEHENDI · MANDAP &amp; MAMERU · HALDI · SANGEET · WEDDING · DHAVAL APEX VIDEO · 2026 · POOJA · MEHENDI · MANDAP &amp; MAMERU · HALDI · SANGEET · WEDDING · DHAVAL APEX VIDEO · 2026 · </textPath></text>
+
+<circle cx="200" cy="200" r="72" fill="none" stroke="#fff" stroke-opacity=".25"/>
+<circle cx="200" cy="200" r="64" fill="#e9e9e7" fill-opacity=".92"/>
+<circle cx="200" cy="200" r="58" fill="none" stroke="#b9b9b6" stroke-width="2"/>
+<circle cx="200" cy="200" r="200" fill="url(#d83h)"/>
+<circle cx="200" cy="200" r="198" fill="none" stroke="#000" stroke-opacity=".15" stroke-width="3"/>
+</g></svg></div></div></div></a>
+</article>
+<section class="contact sec" id="contact" aria-labelledby="contactH"><div class="wrap">
+  <div class="l">
+    <p class="eyebrow">Contact</p>
+    <h2 class="h1" id="contactH">Let’s Create Something Worth Remembering.</h2>
+    <blockquote>Tell us about your upcoming event, and our team will help you plan the right production setup.</blockquote>
+    <p class="btns"><a class="btn" href="https://wa.me/919892951911" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2a9.7 9.7 0 0 0-8.3 14.8L2.4 21.8l4.9-1.3A9.7 9.7 0 1 0 12 2.2zm0 1.8a7.9 7.9 0 1 1-4 14.7l-.3-.2-2.8.8.8-2.7-.2-.3A7.9 7.9 0 0 1 12 4zm-3 3.7c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.300s1 2.700 1.200 2.900c.1.2 2 3.200 5 4.300 2.400.9 2.900.7 3.400.7s1.700-.7 1.900-1.400c.2-.700.2-1.200.2-1.400-.1-.1-.3-.2-.6-.4l-2-.9c-.3-.1-.5-.2-.7.1l-.9 1.100c-.2.2-.3.2-.6.1-.3-.2-1.200-.5-2.300-1.400-.9-.800-1.400-1.700-1.600-2-.2-.3 0-.5.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.200c-.2-.5-.4-.5-.6-.5z"/></svg>Enquire on WhatsApp</a><a class="btn ghost" href="tel:+919892951911">Call +91 98929 51911</a></p>
+    <dl class="reach">
+      <div><dt>Call or WhatsApp</dt><dd><span>Dhaval Kapadia</span><a href="tel:+919892951911">+91 98929 51911</a><a href="tel:+919146668617">+91 91466 68617</a></dd></div>
+      <div><dt>Email</dt><dd><a href="mailto:dhavalkapadiaapex@gmail.com">dhavalkapadiaapex@gmail.com</a></dd></div>
+      <div><dt>Studio</dt><dd>Mumbai, India</dd></div>
+      <div><dt>Follow</dt><dd><a href="https://www.instagram.com/apex_video/" target="_blank" rel="noopener">Instagram @apex_video</a><a href="https://youtube.com/@dhavalkapadiaapex" target="_blank" rel="noopener">YouTube @dhavalkapadiaapex</a></dd></div>
+    </dl>
   </div>
-</footer>
-
-<script>window.PAGE={"view":"film","id":"reema-chaitanya"}</script>
+  <form class="form" id="enq" novalidate>
+    <h3 class="h3">Send a quick enquiry</h3>
+    <label for="fType" class="full">Type of coverage<select id="fType" name="type"><option>Corporate event</option><option>Concert or cultural event</option><option>Multi-camera live stream</option><option>Wedding film</option><option>Photography</option><option>Something else</option></select></label>
+    <label for="fDate">Event date<input id="fDate" name="date" type="date"></label>
+    <label for="fLoc">Location<input id="fLoc" name="location" placeholder="City or venue" autocomplete="off"></label>
+    <label for="fName" class="full">Your name<input id="fName" name="name" autocomplete="name" placeholder="Full name"></label>
+    <label for="fNote" class="full">Anything else<textarea id="fNote" name="note" rows="2" placeholder="Schedule, audience size, what you need filmed"></textarea></label>
+    <a class="btn full" id="waSend" href="https://wa.me/919892951911" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2a9.7 9.7 0 0 0-8.3 14.8L2.4 21.8l4.9-1.3A9.7 9.7 0 1 0 12 2.2zm0 1.8a7.9 7.9 0 1 1-4 14.7l-.3-.2-2.8.8.8-2.7-.2-.3A7.9 7.9 0 0 1 12 4zm-3 3.7c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.300s1 2.700 1.200 2.900c.1.2 2 3.200 5 4.300 2.400.9 2.900.7 3.400.7s1.700-.7 1.900-1.400c.2-.700.2-1.200.2-1.400-.1-.1-.3-.2-.6-.4l-2-.9c-.3-.1-.5-.2-.7.1l-.9 1.100c-.2.2-.3.2-.6.1-.3-.2-1.200-.5-2.300-1.400-.9-.800-1.400-1.700-1.600-2-.2-.3 0-.5.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.200c-.2-.5-.4-.5-.6-.5z"/></svg>Send on WhatsApp</a>
+    <p class="note">Opens WhatsApp with your details filled in, ready to send.</p>
+  </form>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <a class="brand" href="/" aria-label="Apex Video, home"><img src="/logo.png" width="36" height="36" alt="" loading="lazy"><span>© 2026 Dhaval Apex Video · Mumbai</span></a>
+  <nav aria-label="Footer"><a href="/">Home</a><a href="/events/">Events &amp; Live</a><a href="/weddings/">Weddings</a><a href="/services/">Services</a><a href="/about/">About Us</a><a href="#contact">Contact</a></nav>
+</div></footer>
+<a class="fab" href="https://wa.me/919892951911" target="_blank" rel="noopener" aria-label="Enquire on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2a9.7 9.7 0 0 0-8.3 14.8L2.4 21.8l4.9-1.3A9.7 9.7 0 1 0 12 2.2zm0 1.8a7.9 7.9 0 1 1-4 14.7l-.3-.2-2.8.8.8-2.7-.2-.3A7.9 7.9 0 0 1 12 4zm-3 3.7c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.300s1 2.700 1.200 2.900c.1.2 2 3.200 5 4.300 2.400.9 2.900.7 3.400.7s1.700-.7 1.900-1.400c.2-.700.2-1.200.2-1.400-.1-.1-.3-.2-.6-.4l-2-.9c-.3-.1-.5-.2-.7.1l-.9 1.100c-.2.2-.3.2-.6.1-.3-.2-1.200-.5-2.300-1.400-.9-.800-1.400-1.700-1.600-2-.2-.3 0-.5.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.200c-.2-.5-.4-.5-.6-.5z"/></svg></a>
 <script src="/assets/site.js" defer></script>
 </body>
 </html>
