@@ -212,6 +212,7 @@ function filmHTML(p){
   let n=0;
   return `<article class="film fade-in">
     <header class="gut">
+      <a class="back" href="${p.k==="wedding"?"/weddings/":"/"}" aria-label="${p.k==="wedding"?"Back to weddings":"Back to home"}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       <h1 class="ftitle">${words}</h1>
       <div class="rows">
         ${[[p.k==="wedding"?"Film":"Format",p.cer],p.year&&["Year",p.year],...(p.meta||[]).filter(m=>m[0]!=="Setup"),!p.priv&&["Films",String(p.films.reduce((n,g)=>n+g[1].filter(x=>x[2]).length,0)||"Coming soon")],["Studio","Mumbai"]].filter(Boolean).map(([a,b])=>`<div class="r${/^(Films|Studio|Role|Year)$/.test(a)?" minor":""}"><span class="cap">${esc(a)}</span><span class="v">${esc(b)}</span></div>`).join("")}

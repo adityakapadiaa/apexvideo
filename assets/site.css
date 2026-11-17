@@ -387,6 +387,18 @@ footer .in{padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
 body footer{border-top:0;background:var(--paper-2)}
 body footer .contact>div{border-top:0;padding-top:0}
 main:has(.next)~footer{margin-top:0}
+/* breaker + back link */
+.breaker{margin-top:96px;overflow:hidden}
+.breaker .reel{display:flex;gap:12px;width:max-content;animation:reel 70s linear infinite}
+.breaker img{height:clamp(120px,15vw,200px);width:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;display:block}
+.breaker .cap{text-align:center;color:var(--soft);margin:22px 16px 0}
+@keyframes reel{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.breaker .reel{animation:none}}
+.back{display:inline-grid;place-items:center;width:44px;height:44px;margin-top:16px;color:var(--ink);text-decoration:none;border:1px solid var(--rule-2);border-radius:12px;transition:background .2s,color .2s,border-color .2s}
+.back svg{width:20px;height:20px}
+.back:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.film .ftitle{margin-top:18px}
+@media (max-width:600px){.breaker{margin-top:48px}.breaker img{height:110px}.back{margin-top:12px}}
 /* feedback round, 17 Nov */
 .qbtn{border-radius:12px}
 .dots{display:none}
