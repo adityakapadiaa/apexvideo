@@ -121,6 +121,7 @@ function home(k){
         <p class="blurb2" id="blurb2"></p>
         <div class="ctrl"><span class="count" id="count"></span><button class="arrow" data-step="-1" aria-label="Previous film">←</button><button class="arrow" data-step="1" aria-label="Next film">→</button><a class="open" id="openLink" href="#">Open film</a></div>
       </div>
+      <div class="dots" id="dots" aria-hidden="true">${list.map((p,i)=>`<button type="button" tabindex="-1" data-go="${i}"></button>`).join("")}</div>
       <div class="mtitle" id="mtitle" aria-hidden="true"></div>
       <div class="crate" id="crate" aria-roledescription="carousel" aria-label="${k==="wedding"?"Wedding films":"Event films"}">
         <div class="track" id="track">${list.map((p,i)=>`<div class="disc" data-i="${i}"><div class="face"><div class="spin">${art(p)}</div></div>${scribble()}<button class="hit" data-i="${i}" aria-label="${esc(p.title)}"></button></div>`).join("")}</div>
@@ -159,10 +160,10 @@ function mountHome(k){
     if(near!==last){last=near;const p=list[near];
       document.getElementById("credits").innerHTML=creditsHTML(p);
       document.getElementById("blurb2").textContent=p.syn;
-      document.getElementById("mtitle").innerHTML=`<div class="swap"><h3>${esc(p.title)}</h3><p class="cap">${esc(p.cer)}</p></div><span class="cue cap">Details ↓</span>`;
+      document.getElementById("mtitle").innerHTML=`<div class="swap"><h3>${esc(p.title)}</h3><p class="cap">${esc(p.cer)}${p.l?' <span class="sample">Latest</span>':""}</p></div>`;
       document.getElementById("count").textContent=`${String(near+1).padStart(2,"0")} / ${String(list.length).padStart(2,"0")}`;
       document.getElementById("openLink").href="/films/"+p.id+"/";
-      discs.forEach((d,i)=>d.classList.toggle("on",i===near));
+      discs.forEach((d,i)=>d.classList.toggle("on",i===near));document.querySelectorAll("#dots button").forEach((d,i)=>d.classList.toggle("on",i===near));
       prev.disabled=near===0;next.disabled=near===list.length-1}
     raf=requestAnimationFrame(frame);
   }
@@ -180,6 +181,7 @@ function mountHome(k){
   const end=()=>{if(!dragging)return;dragging=false;el.classList.remove("drag");if(axis==="x"){const v=pos-sp;go(Math.round(-(pos+(Math.abs(v)>30?Math.sign(v)*gap*.35:0))/gap))}else target=-idx*gap};
   el.addEventListener("pointerup",()=>{const tap=dragging&&dist<10&&downI!=null;end();if(tap)act(+downI)});el.addEventListener("pointercancel",end);el.addEventListener("pointerleave",e=>{if(!el.hasPointerCapture(e.pointerId))end()});
   el.addEventListener("click",e=>{const b=e.target.closest(".hit");if(b&&e.detail===0)act(+b.dataset.i)});
+  document.getElementById("dots").addEventListener("click",e=>{const b=e.target.closest("[data-go]");if(b)go(+b.dataset.go)});
   document.getElementById("mtitle").addEventListener("click",()=>document.querySelector(".side").scrollIntoView({behavior:reduce?"auto":"smooth"}));
   const side=e=>{const s=e.target.closest("[data-step]");if(s)go(idx+ +s.dataset.step)};
   document.querySelector(".side").addEventListener("click",side);
@@ -211,10 +213,9 @@ function filmHTML(p){
   return `<article class="film fade-in">
     <header class="gut">
       <h1 class="ftitle">${words}</h1>
-      <div class="fcred"><span class="fb"><span class="cap">Filmed by</span>Dhaval Apex Video </span><span class="cap">${p.k==="wedding"?"Film":"Format"}</span>${esc(p.cer)}${p.l?'<span class="sample">Latest</span>':""}</div>
       <div class="rows">
-        ${[p.year&&["Year",p.year],...(p.meta||[]),!p.priv&&["Films",String(p.films.reduce((n,g)=>n+g[1].filter(x=>x[2]).length,0)||"Coming soon")],["Studio","Mumbai"]].filter(Boolean).map(([a,b])=>`<div class="r${/^(Films|Studio|Role|Year)$/.test(a)?" minor":""}"><span class="cap">${esc(a)}</span><span class="v">${esc(b)}</span></div>`).join("")}
-      </div>
+        ${[[p.k==="wedding"?"Film":"Format",p.cer],p.year&&["Year",p.year],...(p.meta||[]).filter(m=>m[0]!=="Setup"),!p.priv&&["Films",String(p.films.reduce((n,g)=>n+g[1].filter(x=>x[2]).length,0)||"Coming soon")],["Studio","Mumbai"]].filter(Boolean).map(([a,b])=>`<div class="r${/^(Films|Studio|Role|Year)$/.test(a)?" minor":""}"><span class="cap">${esc(a)}</span><span class="v">${esc(b)}</span></div>`).join("")}
+      </div>${(s=>s?`<div class="setup"><span class="cap">Setup</span><ul>${s[1].split(" · ").map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:"")((p.meta||[]).find(m=>m[0]==="Setup"))}
       <div class="frame">
         <span class="x tl"></span><span class="x tr"></span><span class="x bl"></span><span class="x br"></span>
         ${p.hl?`<a class="disclink" href="${p.hl}" target="_blank" rel="noopener" aria-label="Watch ${esc(p.title)}">${discEl(p)}</a>`:discEl(p)}
