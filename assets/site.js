@@ -3,63 +3,63 @@ const SET_Z190="Sony Z190 cameras · Blackmagic switcher · Wireless talkback";
 const one=(t,id,sub="")=>[["The film",[[t,sub,YT(id)]]]];
 /* k: event | wedding · st: short name printed on the disc · cer: format · meta: extra credit rows · l: latest · img: thumbnail file in /img (omit when there is none yet) */
 const P=[
- {id:"virasat-2026",img:"virasat-site",k:"event",l:1,title:"Virasat 2026",st:"Virasat",year:"2026",cer:"15-day cultural music festival",
+ {id:"virasat-2026",gal:[],img:"virasat-site",k:"event",l:1,title:"Virasat 2026",st:"Virasat",year:"2026",cer:"15-day cultural music festival",
   meta:[["Venue","Himalayan Cultural Centre, Dehradun"],["Organised by","REACH"],["Role","Official videography partner"],["Setup",SET_Z190]],
   pal:["#f0b25a","#a5402c","#1c2f3a"],tag:"Official Videography Partner",
   syn:"Official videography partner for Virasat 2026, a fifteen-day cultural music festival at the Himalayan Cultural Centre in Dehradun, organised by REACH. Packed houses, some of the biggest names in Indian music, and a multi-camera setup switched live.",
   hl:YT("GeqZB9-NWFo"),films:one("Inauguration Highlights","GeqZB9-NWFo","Festival highlight")},
- {id:"janfest-2026",img:"janfest-2025",k:"event",l:1,title:"Janfest 2026",st:"Janfest",year:"2026",cer:"College music festival",
+ {id:"janfest-2026",gal:[],img:"janfest-2025",k:"event",l:1,title:"Janfest 2026",st:"Janfest",year:"2026",cer:"College music festival",
   meta:[["Venue","St. Xavier's College, Mumbai"],["Setup",SET_Z190]],
   pal:["#e7c27a","#6f3b6b","#1b1d33"],tag:"Glamour and grace on stage",
   syn:"Multi-camera coverage of Janfest 2026 at St. Xavier's College, Mumbai, with renowned artists on stage across the festival.",
   films:[["Films",[["Festival film","",null]]]]},
- {id:"mumbai-margazhi-2026",img:"mumbai-margazhi-2025",k:"event",l:1,title:"Mumbai Margazhi 2026",st:"Margazhi",year:"2026",cer:"Carnatic music festival, 7th edition",
+ {id:"mumbai-margazhi-2026",gal:[],img:"mumbai-margazhi-2025",k:"event",l:1,title:"Mumbai Margazhi 2026",st:"Margazhi",year:"2026",cer:"Carnatic music festival, 7th edition",
   meta:[["Venue","St Andrews Auditorium, Bandra"],["Organised by","Banyan Tree Events"],["Setup","Sony Z280 cameras · Datavideo switcher · Wireless talkback"]],
   pal:["#e8a54b","#8a2f24","#2a1a14"],tag:"A feast of Carnatic music",
   syn:"Video coverage for the 7th edition of Mumbai Margazhi Mahotsavam, a festival of Carnatic music organised by Banyan Tree Events at St Andrews Auditorium, Bandra.",
   films:[["Films",[["Festival film","",null]]]]},
- {id:"symphony-of-santoor-2026",k:"event",title:"Symphony of Santoor",st:"Santoor",year:"2026",cer:"Santoor with chamber orchestra",
+ {id:"symphony-of-santoor-2026",gal:[],k:"event",title:"Symphony of Santoor",st:"Santoor",year:"2026",cer:"Santoor with chamber orchestra",
   meta:[["Venue","Jio World Convention Centre, Mumbai"],["Featuring","Rahul Shivkumar Sharma"],["Organised by","Banyan Tree Events"]],
   pal:["#d9c9f0","#5b4a9b","#15122b"],tag:"Santoor meets symphony",
   syn:"Video coverage of Symphony of Santoor, a Banyan Tree Events concert pairing santoor maestro Rahul Shivkumar Sharma with a chamber orchestra.",
   priv:1,films:[]},
- {id:"barkha-ritu-2026",k:"event",title:"Barkha Ritu 2026",st:"Barkha Ritu",year:"2026",cer:"Festival of monsoon ragas",
+ {id:"barkha-ritu-2026",gal:[],k:"event",title:"Barkha Ritu 2026",st:"Barkha Ritu",year:"2026",cer:"Festival of monsoon ragas",
   meta:[["Organised by","Banyan Tree Events"]],
   pal:["#9fd0d6","#2f6f8f","#12202e"],tag:"Ragas for the rains",
   syn:"Video coverage of Barkha Ritu 2026, Banyan Tree Events' festival of Indian classical music built around the ragas of the monsoon.",
   priv:1,films:[]},
- {id:"samanvay-2026",k:"event",title:"Samanvay",st:"Samanvay",year:"2026",cer:"Hindustani and Carnatic jugalbandi",
+ {id:"samanvay-2026",gal:[],k:"event",title:"Samanvay",st:"Samanvay",year:"2026",cer:"Hindustani and Carnatic jugalbandi",
   meta:[["Date","11 June 2026"],["Venue","Nehru Centre Auditorium, Mumbai"],["Featuring","Ashwini Bhide-Deshpande · Sudha Raghunathan"],["Organised by","Banyan Tree Events"]],
   pal:["#f0c27a","#a5562c","#2a1712"],tag:"Two traditions, one stage",
   syn:"Samanvay brings two classical traditions together through a live jugalbandi featuring Ashwini Bhide-Deshpande and Sudha Raghunathan. An evening shaped by listening, response, and the shared language of raga and rhythm.",
   priv:1,films:[]},
- {id:"khusrau-kabir-2026",k:"event",title:"Khusrau-Kabir 2026",st:"Khusrau Kabir",year:"2026",cer:"Festival of Sufi and Bhakti poetry in music",
+ {id:"khusrau-kabir-2026",gal:[],k:"event",title:"Khusrau-Kabir 2026",st:"Khusrau Kabir",year:"2026",cer:"Festival of Sufi and Bhakti poetry in music",
   meta:[["Date","7 January 2026"],["Venue","Nehru Centre Auditorium, Mumbai"],["Organised by","Banyan Tree Events"]],
   pal:["#e3d6a8","#3f6b4f","#101d18"],tag:"Across centuries, in song",
   syn:"Video coverage of Khusrau-Kabir, the Banyan Tree Events concert series celebrating the shared spiritual philosophies, poetry and musical legacies of Hazrat Amir Khusrau and Saint Kabirdas.",
   priv:1,films:[]},
- {id:"speak-greasy",img:"speak-greasy",k:"event",title:"Speak Greasy",st:"Speak Greasy",year:"Ongoing",cer:"Food talk show with Gauri Devidayal",meta:[["Guests","Multiple guests"]],
+ {id:"speak-greasy",gal:[],img:"speak-greasy",k:"event",title:"Speak Greasy",st:"Speak Greasy",year:"Ongoing",cer:"Food talk show with Gauri Devidayal",meta:[["Guests","Multiple guests"]],
   pal:["#f0c08a","#8d5a3b","#22302c"],tag:"Chefs, stories, second helpings",syn:"Speak Greasy, a conversation series hosted by Gauri Devidayal with leading chefs, filmed multi-camera for episodic release.",
   hl:YT("pOGfNleMURE"),films:[["Episodes",[["Ep 6 · The Coastal Cuisine Connoisseur","Chef Sandeep Sreedharan",YT("pOGfNleMURE")],["Ep 5 · Teachings From The Tutor","Chef Mohib Farooqui",YT("sZvm4E3jV2A")]]]]},
- {id:"bh-style-icons",img:"bh-style-icons",k:"event",title:"BH Style Icons",st:"Style Icons",year:"2023",cer:"Awards show",meta:[["Featuring","Anushka Sharma · Ajay Devgn · Kartik Aaryan"]],
+ {id:"bh-style-icons",gal:[],img:"bh-style-icons",k:"event",title:"BH Style Icons",st:"Style Icons",year:"2023",cer:"Awards show",meta:[["Featuring","Anushka Sharma · Ajay Devgn · Kartik Aaryan"]],
   pal:["#f3d9a0","#a0712c","#141414"],tag:"Red carpet, bright lights",syn:"Coverage of the BH Style Icons awards, where Anushka Sharma, Ajay Devgn and Kartik Aaryan took home trophies.",
   hl:YT("8_Isq27cymI"),films:one("BH Style Icons","8_Isq27cymI","Promo")},
- {id:"indian-music-conference-2019",img:"indian-music-conference-2019",k:"event",title:"Indian Music Conference",st:"IMC 2019",year:"2019",cer:"Music conference series, Episode 16",meta:[["Featuring","Pt. Hariprasad Chaurasia · Rakesh Chaurasia, flute"],["Organised by","Banyan Tree Events"]],
+ {id:"indian-music-conference-2019",gal:[],img:"indian-music-conference-2019",k:"event",title:"Indian Music Conference",st:"IMC 2019",year:"2019",cer:"Music conference series, Episode 16",meta:[["Featuring","Pt. Hariprasad Chaurasia · Rakesh Chaurasia, flute"],["Organised by","Banyan Tree Events"]],
   pal:["#b9d7cf","#3d6b64","#122321"],tag:"Breath, bamboo, silence",syn:"Rakesh Chaurasia on flute at the Indian Music Conference 2019, filmed for Banyan Tree Events' episodic series.",
   hl:YT("0tv93nIqv7I"),films:one("Rakesh Chaurasia · Flute","0tv93nIqv7I","Episode 16")},
 
- {id:"yash-shreya",img:"yash-shreya",k:"wedding",title:"Yash & Shreya",year:"2026",cer:"Pooja, Mehendi, Mandap & Mameru, Haldi, Sangeet, Wedding",meta:[["Coverage","Multi-camera"]],
+ {id:"yash-shreya",fn:"Pooja, Mehendi, Mandap & Mameru, Haldi, Sangeet, Wedding",cov:"Multi-camera",gal:[],img:"yash-shreya",k:"wedding",title:"Yash & Shreya",year:"2026",cer:"Pooja, Mehendi, Mandap & Mameru, Haldi, Sangeet, Wedding",meta:[["Coverage","Multi-camera"]],
   pal:["#f2b65c","#b8452f","#1d4f52"],tag:"Six ceremonies, one story",
   syn:"From the first pooja to the pheras, we followed Yash and Shreya through six ceremonies and cut highlight films of the celebrations.",
   hl:YT("3_bx91CfZM4"),
   films:[["Sangeet",[["Sangeet Highlight","",YT("ovrOrO1JpwE")]]],["The Wedding",[["Wedding Highlight","",YT("3_bx91CfZM4")]]]]},
- {id:"shikhar-rasna",img:"shikhar-rasna",k:"wedding",title:"Shikhar & Rasna",year:"2024",cer:"Wedding highlight",meta:[],pal:["#f1b8a0","#9b3d4f","#2a1b2c"],tag:"Every glance, every vow",syn:"Shikhar and Rasna's wedding, cut into a cinematic highlight film.",hl:YT("CHFdAPYEqb8"),films:one("Wedding Highlight","CHFdAPYEqb8")},
- {id:"riya-vrajesh",img:"riya-vrajesh",k:"wedding",title:"Riya & Vrajesh",year:"",cer:"Wedding highlight",meta:[],pal:["#f6d48b","#c4672f","#3b2216"],tag:"A day in gold",syn:"Riya and Vrajesh's wedding highlight film.",hl:YT("e5DtDwmW6H0"),films:one("Wedding Highlight","e5DtDwmW6H0")},
- {id:"mayur-bhairavi",img:"mayur-bhairavi",k:"wedding",title:"Mayur & Bhairavi",year:"",cer:"Wedding highlight",meta:[],pal:["#e9a7c3","#7d2f6a","#1e1630"],tag:"A magical wedding",syn:"Mayur and Bhairavi's wedding, told as a highlight film.",hl:YT("knSRO8laP54"),films:one("Wedding Highlight","knSRO8laP54")},
- {id:"riddhi-gautam",img:"riddhi-gautam",k:"wedding",title:"Riddhi & Gautam",year:"",cer:"Wedding highlight",meta:[],pal:["#f3c98a","#a0522d","#26302a"],tag:"Laughter, then pheras",syn:"Riddhi and Gautam's wedding highlight film.",hl:YT("A7jZPZHEB8w"),films:one("Wedding Highlight","A7jZPZHEB8w")},
- {id:"pooja-vikas",img:"pooja-vikas",k:"wedding",title:"Pooja & Vikas",year:"",cer:"Wedding highlight",meta:[],pal:["#f7e09a","#d07a2c","#5c2a1b"],tag:"Marigold and music",syn:"Pooja and Vikas's wedding highlight film.",hl:YT("gNbr3ObE7x8"),films:one("Wedding Highlight","gNbr3ObE7x8")},
- {id:"harsh-hiral",img:"harsh-hiral",k:"wedding",title:"Harsh & Hiral",year:"",cer:"Cinematic pre-wedding film",meta:[],pal:["#a9d3d0","#3c6f8f","#141c33"],tag:"Before the big day",syn:"A cinematic pre-wedding film for Harsh and Hiral.",hl:YT("YIHfJD7TpDE"),films:one("Pre-Wedding Film","YIHfJD7TpDE")},
- {id:"reema-chaitanya",img:"reema-chaitanya",k:"wedding",title:"Reema & Chaitanya",year:"",cer:"Engagement ceremony",meta:[],pal:["#f0b9a0","#a24b3a","#2b2420"],tag:"The ring, the promise",syn:"Reema and Chaitanya's engagement ceremony on film.",hl:YT("jgHTyb6HuWs"),films:one("Engagement Ceremony","jgHTyb6HuWs")}
+ {id:"shikhar-rasna",fn:"Wedding",cov:"Highlight film",gal:[],img:"shikhar-rasna",k:"wedding",title:"Shikhar & Rasna",year:"2024",cer:"Wedding highlight",meta:[],pal:["#f1b8a0","#9b3d4f","#2a1b2c"],tag:"Every glance, every vow",syn:"Shikhar and Rasna's wedding, cut into a cinematic highlight film.",hl:YT("CHFdAPYEqb8"),films:one("Wedding Highlight","CHFdAPYEqb8")},
+ {id:"riya-vrajesh",fn:"Wedding",cov:"Highlight film",gal:[],img:"riya-vrajesh",k:"wedding",title:"Riya & Vrajesh",year:"",cer:"Wedding highlight",meta:[],pal:["#f6d48b","#c4672f","#3b2216"],tag:"A day in gold",syn:"Riya and Vrajesh's wedding highlight film.",hl:YT("e5DtDwmW6H0"),films:one("Wedding Highlight","e5DtDwmW6H0")},
+ {id:"mayur-bhairavi",fn:"Wedding",cov:"Highlight film",gal:[],img:"mayur-bhairavi",k:"wedding",title:"Mayur & Bhairavi",year:"",cer:"Wedding highlight",meta:[],pal:["#e9a7c3","#7d2f6a","#1e1630"],tag:"A magical wedding",syn:"Mayur and Bhairavi's wedding, told as a highlight film.",hl:YT("knSRO8laP54"),films:one("Wedding Highlight","knSRO8laP54")},
+ {id:"riddhi-gautam",fn:"Wedding",cov:"Highlight film",gal:[],img:"riddhi-gautam",k:"wedding",title:"Riddhi & Gautam",year:"",cer:"Wedding highlight",meta:[],pal:["#f3c98a","#a0522d","#26302a"],tag:"Laughter, then pheras",syn:"Riddhi and Gautam's wedding highlight film.",hl:YT("A7jZPZHEB8w"),films:one("Wedding Highlight","A7jZPZHEB8w")},
+ {id:"pooja-vikas",fn:"Wedding",cov:"Highlight film",gal:[],img:"pooja-vikas",k:"wedding",title:"Pooja & Vikas",year:"",cer:"Wedding highlight",meta:[],pal:["#f7e09a","#d07a2c","#5c2a1b"],tag:"Marigold and music",syn:"Pooja and Vikas's wedding highlight film.",hl:YT("gNbr3ObE7x8"),films:one("Wedding Highlight","gNbr3ObE7x8")},
+ {id:"harsh-hiral",fn:"Pre-wedding",cov:"Pre-wedding film",gal:[],img:"harsh-hiral",k:"wedding",title:"Harsh & Hiral",year:"",cer:"Cinematic pre-wedding film",meta:[],pal:["#a9d3d0","#3c6f8f","#141c33"],tag:"Before the big day",syn:"A cinematic pre-wedding film for Harsh and Hiral.",hl:YT("YIHfJD7TpDE"),films:one("Pre-Wedding Film","YIHfJD7TpDE")},
+ {id:"reema-chaitanya",fn:"Engagement",cov:"Engagement film",gal:[],img:"reema-chaitanya",k:"wedding",title:"Reema & Chaitanya",year:"",cer:"Engagement ceremony",meta:[],pal:["#f0b9a0","#a24b3a","#2b2420"],tag:"The ring, the promise",syn:"Reema and Chaitanya's engagement ceremony on film.",hl:YT("jgHTyb6HuWs"),films:one("Engagement Ceremony","jgHTyb6HuWs")}
 ];
 const IMG={};
 P.forEach(p=>{if(p.img)IMG[p.id]="/img/"+p.img+".webp"});
@@ -129,11 +129,14 @@ function home(k){
     </div>
   </section>`;
 }
+const NIL="Nil";
+function metaOf(p,k){return ((p.meta||[]).find(m=>m[0]===k)||[])[1]}
+function venueOf(p){return metaOf(p,"Venue")||metaOf(p,"Location")}
+function homeRows(p){return p.k==="wedding"?[["Functions",p.fn||NIL],["Year",p.year||NIL],["Coverage",p.cov||NIL]]:[["Format",p.cer||NIL],["Venue",venueOf(p)||NIL],["Year",p.year||NIL],["Organised by",metaOf(p,"Organised by")||NIL]]}
+function pageRows(p){return p.k==="wedding"?homeRows(p):[["Format",p.cer||NIL],["Venue",venueOf(p)||NIL],["Year",p.year||NIL],["Organised by",metaOf(p,"Organised by")||NIL],...(p.meta||[]).filter(m=>!/^(Venue|Location|Organised by|Setup)$/.test(m[0]))]}
 function creditsHTML(p){
-  const venue=(p.meta||[]).find(m=>m[0]==="Venue"||m[0]==="Location"||m[0]==="Featuring");
-  const rows=[[p.k==="wedding"?"Film":"Format",p.cer],venue,p.year&&["Year",p.year]].filter(Boolean).slice(0,3);
   return `<div class="swap"><h2>${esc(p.title)}${p.l?'<span class="sample">Latest</span>':""}</h2>
-    ${rows.map(([a,b])=>`<div class="r"><span class="cap">${esc(a)}</span><span class="v">${esc(b)}</span></div>`).join("")}</div>`;
+    ${homeRows(p).map(([a,b])=>`<div class="r"><span class="cap">${esc(a)}</span><span class="v">${esc(b)}</span></div>`).join("")}</div>`;
 }
 function quotesHTML(p){
   if(!p.q) return `<p class="blurb swap">${esc(p.syn)}</p>`;
@@ -207,58 +210,49 @@ function paintStill(cv,p,seed){
 }
 function filmHTML(p){
   const words=p.title.toUpperCase().split(" ").map((w,i)=>`<span class="w"><span style="animation-delay:${.1+i*.1}s">${esc(w)}</span></span>`).join(" ");
-  const same=P.filter(x=>x.k===p.k),at=same.indexOf(p),nx=same[(at+1)%same.length];
-  const tw=p.tag.split(" "),per=Math.ceil(tw.length/4),lines=[];for(let i=0;i<tw.length;i+=per)lines.push(tw.slice(i,i+per).join(" "));
+  const same=P.filter(x=>x.k===p.k),nx=same[(same.indexOf(p)+1)%same.length],wed=p.k==="wedding";
+  const arrow=d=>`<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${d}" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  const films=p.priv?[]:p.films.map(([g,items])=>[g,items.filter(x=>x[2])]).filter(g=>g[1].length);
+  const setup=metaOf(p,"Setup");
+  const wall=p.gal&&p.gal.length
+    ?`<section class="collage gut" aria-label="Photos from ${esc(p.title)}"><div class="wall">${p.gal.map(u=>`<img src="${u}" alt="${esc(p.title)}, filmed by Dhaval Apex Video" loading="lazy" decoding="async">`).join("")}</div></section>`
+    :IMG[p.id]?`<section class="collage gut"><div class="one"><img src="${IMG[p.id]}" width="640" height="360" alt="${esc(p.title)}, filmed by Dhaval Apex Video" loading="lazy" decoding="async"></div></section>`
+    :'<div class="sbreak" aria-hidden="true"><span></span><span></span><span></span></div>';
   let n=0;
   return `<article class="film fade-in">
     <header class="gut">
-      <a class="back" href="${p.k==="wedding"?"/weddings/":"/"}" aria-label="${p.k==="wedding"?"Back to weddings":"Back to home"}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <div class="fnav">
+        <a class="back" href="${wed?"/weddings/":"/"}" aria-label="${wed?"Back to weddings":"Back to home"}">${arrow("M19 12H5m6-6-6 6 6 6")}</a>
+        <a class="back" href="/films/${nx.id}/" aria-label="Next: ${esc(nx.title)}">${arrow("M5 12h14m-6-6 6 6-6 6")}</a>
+      </div>
       <h1 class="ftitle">${words}</h1>
-      <div class="rows">
-        ${[[p.k==="wedding"?"Film":"Format",p.cer],p.year&&["Year",p.year],...(p.meta||[]).filter(m=>m[0]!=="Setup"),!p.priv&&["Films",String(p.films.reduce((n,g)=>n+g[1].filter(x=>x[2]).length,0)||"Coming soon")],["Studio","Mumbai"]].filter(Boolean).map(([a,b])=>`<div class="r${/^(Films|Studio|Role|Year)$/.test(a)?" minor":""}"><span class="cap">${esc(a)}</span><span class="v">${esc(b)}</span></div>`).join("")}
-      </div>${(s=>s?`<div class="setup"><span class="cap">Setup</span><ul>${s[1].split(" · ").map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:"")((p.meta||[]).find(m=>m[0]==="Setup"))}
+      <div class="rows">${pageRows(p).map(([a,b])=>`<div class="r"><span class="cap">${esc(a)}</span><span class="v">${esc(b)}</span></div>`).join("")}</div>
       <div class="frame">
-        <span class="x tl"></span><span class="x tr"></span><span class="x bl"></span><span class="x br"></span>
         ${p.hl?`<a class="disclink" href="${p.hl}" target="_blank" rel="noopener" aria-label="Watch ${esc(p.title)}">${discEl(p)}</a>`:discEl(p)}
-        <div class="btnrow">${!p.hl?"":`<a class="dbl" ${p.hl?`href="${p.hl}" target="_blank" rel="noopener"`:'aria-disabled="true"'}>Watch online</a>`}${p.full?`<a class="dbl" href="${p.full}" target="_blank" rel="noopener">Full film</a>`:`<a class="dbl" href="https://wa.me/919892951911" target="_blank" rel="noopener">Hire us for your event</a>`}</div>
+        <div class="btnrow"><a class="dbl" href="https://wa.me/919892951911" target="_blank" rel="noopener">Hire us for your event</a></div>
       </div>
     </header>
-    <section class="still" id="still">
-      <canvas id="stillCv"></canvas>
-      <div class="lines"><div></div><div></div><div></div><div></div></div>
-      ${lines.map((w,i)=>`<span class="word" style="${i%2?"right":"left"}:6%;top:calc(${(i+1)*25}% - 2px);transform:translateY(-100%)">${esc(w)}</span>`).join("")}
-      
-    </section>
+    ${wall}
     <div class="band gut"><p class="syn">${esc(p.syn)}</p>
-      ${p.priv?"":`<section class="films"><h2>The Films</h2>
-        <div class="cer">${p.films.map(([nm,items])=>`<div class="grp"><h3><span class="cap" style="font-size:10px">${esc(nm)}</span><span class="cap" style="font-size:10px">${String(++n).padStart(2,"0")}</span></h3>${items.map(([t,sub,url,type])=>url
-          ?`<a class="row" href="${url}" target="_blank" rel="noopener"><span><span class="t">${esc(t)}</span>${sub?`<small>${esc(sub)}</small>`:""}</span><span class="go">${type||"Watch"} ↗</span></a>`
-          :`<div class="row off"><span><span class="t">${esc(t)}</span>${sub?`<small>${esc(sub)}</small>`:""}</span><span class="go">Film coming soon</span></div>`).join("")}</div>`).join("")}</div>
-      </section>`}
+      ${films.length?`<section class="films"><h2>The Films</h2>
+        <div class="cer">${films.map(([nm,items])=>`<div class="grp"><h3><span class="cap" style="font-size:10px">${esc(nm)}</span><span class="cap" style="font-size:10px">${String(++n).padStart(2,"0")}</span></h3>${items.map(([t,sub,url,type])=>`<a class="row" href="${url}" target="_blank" rel="noopener"><span><span class="t">${esc(t)}</span>${sub?`<small>${esc(sub)}</small>`:""}</span><span class="go">${type||"Watch"} ↗</span></a>`).join("")}</div>`).join("")}</div>
+      </section>`:""}
+      ${wed?"":`<section class="setup"><span class="cap">Setup</span>${setup?`<ul>${setup.split(" · ").map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:`<p>${NIL}</p>`}</section>`}
     </div>
-    <a class="next" href="/films/${nx.id}/" aria-label="Next production: ${esc(nx.title)}">
-      <span class="lab cap">Next production</span>
-      <span class="nt">${esc(nx.title)}</span>
-      ${discEl(nx)}
-    </a>
   </article>`;
 }
-function mountFilm(p){
-  const seed=[...p.id].reduce((s,c)=>s+c.charCodeAt(0),0);
-  requestAnimationFrame(()=>paintStill(document.getElementById("stillCv"),p,seed));
-  const still=document.getElementById("still"),words=[...still.querySelectorAll(".word")];
-  const onScroll=()=>{const r=still.getBoundingClientRect(),t=Math.max(-1,Math.min(1,(r.top+r.height/2-innerHeight/2)/innerHeight));
-    words.forEach((w,i)=>{const dir=i%2?1:-1;w.style.transform=`translate(${reduce||innerWidth<600?0:t*dir*40}px,-100%)`})};
-  onScroll();addEventListener("scroll",onScroll,{passive:true});
-  cleanup=()=>removeEventListener("scroll",onScroll);
-}
+function mountFilm(p){cleanup=null}
 
-/* ---------- index ---------- */
-const idxBtn=document.getElementById("idxBtn"),idxPanel=document.getElementById("idxPanel");
-document.querySelectorAll(".navbtn").forEach(b=>b.addEventListener("click",()=>{const go=()=>document.getElementById(b.dataset.to)?.scrollIntoView({behavior:reduce?"auto":"smooth"});
-  go()}));
-idxBtn.onclick=()=>{const o=idxPanel.hidden;idxPanel.hidden=!o;idxBtn.setAttribute("aria-expanded",o)};
-document.addEventListener("click",e=>{if(!e.target.closest(".idx")){idxPanel.hidden=true;idxBtn.setAttribute("aria-expanded","false")}});
+/* ---------- side menu ---------- */
+(function(){
+  const d=document.getElementById("drawer"),s=document.getElementById("scrim"),b=document.getElementById("menuBtn"),x=document.getElementById("drawerClose"),t=document.getElementById("idxToggle"),l=document.getElementById("idxList");
+  if(!d)return;
+  const set=o=>{d.classList.toggle("is-open",o);s.classList.toggle("is-open",o);d.inert=!o;b.setAttribute("aria-expanded",o);document.documentElement.classList.toggle("lock",o);setTimeout(()=>(o?x:b).focus({preventScroll:true}),60)};
+  b.addEventListener("click",()=>set(true));x.addEventListener("click",()=>set(false));s.addEventListener("click",()=>set(false));
+  addEventListener("keydown",e=>{if(e.key==="Escape"&&d.classList.contains("is-open"))set(false)});
+  d.addEventListener("click",e=>{if(e.target.closest("a"))set(false)});
+  t.addEventListener("click",()=>{const o=l.hidden;l.hidden=!o;t.setAttribute("aria-expanded",o)});
+})();
 
 document.querySelectorAll(".copy").forEach(b=>b.addEventListener("click",()=>{
   const reset=t=>{b.textContent=t;setTimeout(()=>b.textContent="Copy",1500)};

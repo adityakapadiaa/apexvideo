@@ -8,6 +8,11 @@
       "permanent": true
     },
     {
+      "source": "/studio",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
       "source": "/films/virasat-2025",
       "destination": "/films/virasat-2026/",
       "permanent": true
