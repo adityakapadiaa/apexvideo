@@ -451,6 +451,11 @@ main:has(.next)~footer{margin-top:0}
 .band>.syn:only-child{padding-block:56px;max-width:60ch;font-size:17px}
 @media (max-width:520px){.nav .logo{display:block}.nav .logo img{width:30px;height:30px;border-radius:6px}.nav a.tab[data-k="contact"]{display:none}}
 /* ---------- feedback round, 18 Nov ---------- */
+/* About: portrait */
+.portrait{margin:28px 0 0;max-width:340px}
+.portrait img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;border-radius:14px;background:var(--paper-2)}
+.portrait figcaption{margin-top:10px;font-size:13px;font-weight:600;color:var(--soft)}
+@media (max-width:860px){.portrait{max-width:300px}}
 /* disc: no hand-drawn line around it */
 .disc svg.scrib{display:none}
 /* film page */
