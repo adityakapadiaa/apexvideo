@@ -1,5 +1,5 @@
 const YT=id=>"https://youtu.be/"+id;
-const SET_Z190="Sony Z190 cameras · Blackmagic switcher · Wireless talkback";
+const SET_Z190="Sony Z190 cameras · Broadcast-grade video switcher · Wireless talkback";
 const one=(t,id,sub="")=>[["The film",[[t,sub,YT(id)]]]];
 /* k: event | wedding · st: short name printed on the disc · cer: format · meta: extra credit rows · l: latest · img: thumbnail file in /img (omit when there is none yet) */
 const P=[
@@ -14,7 +14,7 @@ const P=[
   syn:"Multi-camera coverage of Janfest 2026 at St. Xavier's College, Mumbai, with renowned artists on stage across the festival.",
   films:[["Films",[["Festival film","",null]]]]},
  {id:"mumbai-margazhi-2026",gal:[],img:"mumbai-margazhi-2025",k:"event",l:1,title:"Mumbai Margazhi 2026",st:"Margazhi",year:"2026",cer:"Carnatic music festival, 7th edition",
-  meta:[["Venue","St Andrews Auditorium, Bandra"],["Organised by","Banyan Tree Events"],["Setup","Sony Z280 cameras · Datavideo switcher · Wireless talkback"]],
+  meta:[["Venue","St Andrews Auditorium, Bandra"],["Organised by","Banyan Tree Events"],["Setup","Sony Z280 cameras · Broadcast-grade video switcher · Wireless talkback"]],
   pal:["#e8a54b","#8a2f24","#2a1a14"],tag:"A feast of Carnatic music",
   syn:"Video coverage for the 7th edition of Mumbai Margazhi Mahotsavam, a festival of Carnatic music organised by Banyan Tree Events at St Andrews Auditorium, Bandra.",
   films:[["Films",[["Festival film","",null]]]]},
