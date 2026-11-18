@@ -451,6 +451,10 @@ main:has(.next)~footer{margin-top:0}
 /* carousel: lighter discs (no grain texture while they move) */
 .crate .disc svg circle[filter]{display:none}
 .crate .disc{backface-visibility:hidden}
+.extra{margin:18px 0 0;display:flex;flex-wrap:wrap;gap:12px 40px}
+.extra dt{font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
+.extra dd{margin:4px 0 0;font-size:15px;font-weight:600}
+@media (max-width:600px){.extra{flex-direction:column;gap:12px}}
 /* About: portrait */
 .portrait{margin:0 0 22px;max-width:300px}
 .portrait img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;border-radius:14px;background:var(--paper-2)}

@@ -235,7 +235,7 @@ function filmHTML(p){
       </div>
     </header>
     ${wall}
-    <div class="band gut"><p class="syn">${esc(p.syn)}</p>
+    <div class="band gut"><p class="syn">${esc(p.syn)}</p>${(x=>x.length?`<dl class="extra">${x.map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl>`:"")(wed?[]:(p.meta||[]).filter(m=>!/^(Venue|Location|Organised by|Setup)$/.test(m[0])))}
       ${films.length?`<section class="films"><h2>The Films</h2>
         <div class="cer">${films.map(([nm,items])=>`<div class="grp"><h3><span class="cap" style="font-size:10px">${esc(nm)}</span><span class="cap" style="font-size:10px">${String(++n).padStart(2,"0")}</span></h3>${items.map(([t,sub,url,type])=>`<a class="row" href="${url}" target="_blank" rel="noopener"><span><span class="t">${esc(t)}</span>${sub?`<small>${esc(sub)}</small>`:""}</span><span class="go">${type||"Watch"} ↗</span></a>`).join("")}</div>`).join("")}</div>
       </section>`:""}
