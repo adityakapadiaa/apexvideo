@@ -243,10 +243,7 @@ footer .in{padding-block:26px calc(40px + env(safe-area-inset-bottom,0px))}
 @media (max-width:400px){
   .still .word{font-size:clamp(28px,10vw,44px)}
 }
-@media (prefers-reduced-motion:reduce){
-  .swap>*,.ftitle .w span,.frame .disc .face,.fade-in{animation:none!important}
-  .disc .spin{animation:none}
-}
+
 /* ---------- polish layer: one typeface, weight and size carry the hierarchy ---------- */
 html{scroll-behavior:smooth}
 body{font-size:15.5px;line-height:1.5}
@@ -365,7 +362,7 @@ footer{margin-top:44px}
 .trusted li img{position:absolute;left:12%;top:14%;width:76%;height:72%;max-width:none;object-fit:contain}
 .trusted li.cover img{left:0;top:0;width:100%;height:100%;object-fit:cover}
 @media (max-width:860px){.trusted ul{grid-template-columns:repeat(4,minmax(0,1fr))}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
 
 /* logo */
 .nav .logo{display:block;line-height:0}
@@ -393,7 +390,7 @@ main:has(.next)~footer{margin-top:0}
 .breaker img{height:clamp(120px,15vw,200px);width:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;display:block}
 .breaker .cap{text-align:center;color:var(--soft);margin:22px 16px 0}
 @keyframes reel{to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion:reduce){.breaker .reel{animation:none}}
+
 .back{display:inline-grid;place-items:center;width:44px;height:44px;margin-top:16px;color:var(--ink);text-decoration:none;border:1px solid var(--rule-2);border-radius:12px;transition:background .2s,color .2s,border-color .2s}
 .back svg{width:20px;height:20px}
 .back:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
@@ -451,6 +448,9 @@ main:has(.next)~footer{margin-top:0}
 .band>.syn:only-child{padding-block:56px;max-width:60ch;font-size:17px}
 @media (max-width:520px){.nav .logo{display:block}.nav .logo img{width:30px;height:30px;border-radius:6px}.nav a.tab[data-k="contact"]{display:none}}
 /* ---------- feedback round, 18 Nov ---------- */
+/* carousel: lighter discs (no grain texture while they move) */
+.crate .disc svg circle[filter]{display:none}
+.crate .disc{backface-visibility:hidden}
 /* About: portrait */
 .portrait{margin:0 0 22px;max-width:300px}
 .portrait img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;border-radius:14px;background:var(--paper-2)}
@@ -508,4 +508,4 @@ main:has(.next)~footer{margin-top:0}
 .dlist a span:last-child{color:var(--soft);font-size:13px;flex:none}
 .dlinks{display:flex;flex-direction:column}
 .dlinks a[aria-current="page"]{color:var(--accent)}
-@media (prefers-reduced-motion:reduce){.drawer,.scrim{transition:none}}
+

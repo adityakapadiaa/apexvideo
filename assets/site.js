@@ -64,7 +64,7 @@ const P=[
 const IMG={};
 P.forEach(p=>{if(p.img)IMG[p.id]="/img/"+p.img+".webp"});
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const reduce=false;
 
 /* ---------- printed disc art (poster-style, like the reference) ---------- */
 let uid=0;
@@ -150,8 +150,10 @@ function mountHome(k){
   function measure(){D=discs[0].offsetWidth;gap=D*(innerWidth<860?.78:.7);target=-idx*gap;pos=pos===undefined?target:pos}
   measure();
   function go(i){idx=Math.max(0,Math.min(list.length-1,i));state[k]=idx;target=-idx*gap}
-  function frame(){
-    pos+=(target-pos)*(dragging||reduce?1:.13);
+  let lastT=performance.now();
+  function frame(now){
+    now=now||performance.now();const dt=Math.min(64,now-lastT);lastT=now;
+    pos+=(target-pos)*(dragging||reduce?1:1-Math.pow(1-.2,dt/16.667));if(Math.abs(target-pos)<.3)pos=target;
     discs.forEach((d,i)=>{
       const x=i*gap+pos,o=x/gap,a=Math.min(Math.abs(o),3);
       const s=1-Math.min(a,1)*.3-Math.max(0,a-1)*.08;
