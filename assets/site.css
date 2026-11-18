@@ -452,10 +452,14 @@ main:has(.next)~footer{margin-top:0}
 @media (max-width:520px){.nav .logo{display:block}.nav .logo img{width:30px;height:30px;border-radius:6px}.nav a.tab[data-k="contact"]{display:none}}
 /* ---------- feedback round, 18 Nov ---------- */
 /* About: portrait */
-.portrait{margin:28px 0 0;max-width:340px}
+.portrait{margin:0 0 22px;max-width:300px}
 .portrait img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;border-radius:14px;background:var(--paper-2)}
 .portrait figcaption{margin-top:10px;font-size:13px;font-weight:600;color:var(--soft)}
-@media (max-width:860px){.portrait{max-width:300px}}
+@media (min-width:861px){
+  .prose:has(.portrait){display:grid;grid-template-columns:230px minmax(0,1fr);column-gap:36px;align-items:start}
+  .prose .portrait{grid-column:1;grid-row:1 / span 4;margin:0;max-width:none}
+  .prose:has(.portrait)>p{grid-column:2}
+}
 /* disc: no hand-drawn line around it */
 .disc svg.scrib{display:none}
 /* film page */
