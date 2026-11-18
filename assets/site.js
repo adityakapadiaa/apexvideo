@@ -133,7 +133,7 @@ const NIL="Nil";
 function metaOf(p,k){return ((p.meta||[]).find(m=>m[0]===k)||[])[1]}
 function venueOf(p){return metaOf(p,"Venue")||metaOf(p,"Location")}
 function homeRows(p){return p.k==="wedding"?[["Functions",p.fn||NIL],["Year",p.year||NIL],["Coverage",p.cov||NIL]]:[["Format",p.cer||NIL],["Venue",venueOf(p)||NIL],["Year",p.year||NIL],["Organised by",metaOf(p,"Organised by")||NIL]]}
-function pageRows(p){return p.k==="wedding"?homeRows(p):[["Format",p.cer||NIL],["Venue",venueOf(p)||NIL],["Year",p.year||NIL],["Organised by",metaOf(p,"Organised by")||NIL],...(p.meta||[]).filter(m=>!/^(Venue|Location|Organised by|Setup)$/.test(m[0]))]}
+function pageRows(p){return p.k==="wedding"?homeRows(p):[["Format",p.cer||NIL],["Venue",venueOf(p)||NIL],["Year",p.year||NIL],["Organised by",metaOf(p,"Organised by")||NIL]]}
 function creditsHTML(p){
   return `<div class="swap"><h2>${esc(p.title)}${p.l?'<span class="sample">Latest</span>':""}</h2>
     ${homeRows(p).map(([a,b])=>`<div class="r"><span class="cap">${esc(a)}</span><span class="v">${esc(b)}</span></div>`).join("")}</div>`;
